@@ -1,0 +1,12 @@
+1615677714600	geckodriver	INFO	Listening on 127.0.0.1:61785
+1615677715375	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/2s/ls9cgms53rd5fk3vbstql61c0000gn/T/rust_mozprofilefnxXG0"
+2021-03-13 18:21:59.753 firefox-bin[26662:10236865] Warning: Expected min height of view: (<NSButton: 0x13d487c00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-03-13 18:21:59.753 firefox-bin[26662:10236865] Warning: Expected min height of view: (<NSButton: 0x13d8c6c00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-03-13 18:21:59.754 firefox-bin[26662:10236865] Warning: Expected min height of view: (<NSButton: 0x13d8c6400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-03-13 18:21:59.754 firefox-bin[26662:10236865] Warning: Expected min height of view: (<NSButton: 0x13d8c6800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-03-13 18:21:59.755 firefox-bin[26662:10236865] Warning: Expected min height of view: (<NSButton: 0x13d8c1c00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-03-13 18:21:59.755 firefox-bin[26662:10236865] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x13d8bfc00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-03-13 18:21:59.756 firefox-bin[26662:10236865] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x13dcd7000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1615677720739	Marionette	INFO	Listening on port 61802
+1615678122162	Marionette	INFO	Stopped listening on port 61802
