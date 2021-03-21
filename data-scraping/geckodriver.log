@@ -1417,3 +1417,21 @@ console.log: WebExtensions: reset-default-search: No addons in our list are inst
 console.log: WebExtensions: reset-default-search: No addons in our list are installed.
 console.log: WebExtensions: reset-default-search: No addons in our list are installed.
 console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1616315569404	geckodriver	INFO	Listening on 127.0.0.1:61325
+1616315570421	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/s5/6nktq05x1r384tpxpwj_ftkj4mtpb_/T/rust_mozprofile0n0huh"
+*** You are running in headless mode.
+1616315570880	geckodriver	INFO	Listening on 127.0.0.1:61345
+1616315570894	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/s5/6nktq05x1r384tpxpwj_ftkj4mtpb_/T/rust_mozprofileVrFuix"
+*** You are running in headless mode.
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616315573542	Marionette	INFO	Listening on port 61354
+1616315573614	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616315573774	Marionette	INFO	Listening on port 61338
+1616315641672	geckodriver	INFO	Listening on 127.0.0.1:61470
+1616315641724	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/var/folders/s5/6nktq05x1r384tpxpwj_ftkj4mtpb_/T/rust_mozprofile0OqsCb"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616315643444	Marionette	INFO	Listening on port 61479
+1616315643481	Marionette	WARN	TLS certificate errors will be ignored for this session
