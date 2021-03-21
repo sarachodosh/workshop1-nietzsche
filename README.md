@@ -1,9 +1,10 @@
-# workshop1-nietzsche
+# Working title: Into the mind of... Nietzsche
+workshop1-nietzsche
 **Students**: Rebecca, Rocío, and Sara 
 **Mentors**: Carlo and Karma
 **Expert**: Joaquin Campodonico
 
-# Working title: Into the mind of... Nietzsche
+### Current summary (TBC)
 - Provide a search & display function to explore his Posthumous fragments
 - Selected topics grouped by four or five main themes that focus on his swaying attitudes from his youth (before c. 1878) and in his more mature years, selected in collaboration with our Nietzsche expert.
 - Provide a voting function to determine whether the selected paragraph was positive or negatively with regards to its subject in order to collectively crowdsource and spark philosophical conversation. Our expert will also provide a few sentences of analysis. Possible links to further exploration or maybe related terms from the opposing thoughts on the same subject?
