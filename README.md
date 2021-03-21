@@ -1,7 +1,17 @@
 # workshop1-nietzsche
+**Students**: Rebecca, Rocío, and Sara 
+**Mentors**: Carlo and Karma
+**Expert**: Joaquin Campodonico
+
+# Working title: Into the mind of... Nietzsche
+- Provide a search & display function to explore his Posthumous fragments
+- Selected topics grouped by four or five main themes that focus on his swaying attitudes from his youth (before c. 1878) and in his more mature years, selected in collaboration with our Nietzsche expert.
+- Provide a voting function to determine whether the selected paragraph was positive or negatively with regards to its subject in order to collectively crowdsource and spark philosophical conversation. Our expert will also provide a few sentences of analysis. Possible links to further exploration or maybe related terms from the opposing thoughts on the same subject?
+- Furthermore, an additional search field for users to input their own terms for exploration.
 
 
-### Summary
+
+### Original idea
 We would like to apply data visualisation to philosophical texts so that we can create alternative ways to engage with philosophical concepts. The focus is on a known narrative in the philosophical sphere, that of the philosopher Nietzsche and his relationship with Schopenhauer.
 Much of Nietzsche’s concepts are influenced by his admiration, and later disapproval of Schopenhauer. It remains a mystery how this happened so we want to visualize which negative terms associated with Shopenhauer’s name.
 We think there is great potential in parsing philosophical texts into a visual format for greater understanding and learning that could only contribute to advancing our collective human knowledge.
@@ -9,16 +19,15 @@ We think there is great potential in parsing philosophical texts into a visual f
 ### Audience
 Anyone who would benefit from this alternative way of visually parsing philosophical texts, i.e., researchers, students, general population.
 
-###Goals
+### Goals
 Build a scraper to pull all the Posthumous Fragments from this website.
 Find an appropriate sentiment analysis model to train with the scraped data. Ensure all ethical considerations are applied.
 Visualise the data in a format that is first narrative, and second exploratory.
 
 
-###About the data
+### About the data
 The data is taken from Nietzsche Source (http://www.nietzschesource.org/#eKGWB/NF-1869,1). More details about the particular edition we are using can be found here.
 Nietzsche Source supports a fully open access policy. All content is published under Creative Commons General Public License "Attribution, Non-Commercial, NoDerivatives"
-
 
 ### Inspiration / Examples
 We have seen some works done on philosophical texts that drove our motivation to do more with this:
