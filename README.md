@@ -1,11 +1,7 @@
 # Working title: Into the mind of... Nietzsche
 workshop1-nietzsche
 
-**Students**: Rebecca, Rocío, and Sara
-
-**Mentors**: Carlo and Karma
-
-**Expert**: Joaquin Campodonico
+**Students**: Rebecca, Rocío, and Sara ; **Mentors**: Carlo and Karma ; **Expert**: Joaquin Campodonico
 
 ### Current summary (TBC)
 - Provide a search & display function to explore his Posthumous fragments
