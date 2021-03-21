@@ -1,7 +1,10 @@
 # Working title: Into the mind of... Nietzsche
 workshop1-nietzsche
-**Students**: Rebecca, Rocío, and Sara 
+
+**Students**: Rebecca, Rocío, and Sara
+
 **Mentors**: Carlo and Karma
+
 **Expert**: Joaquin Campodonico
 
 ### Current summary (TBC)
@@ -11,6 +14,8 @@ workshop1-nietzsche
 - Furthermore, an additional search field for users to input their own terms for exploration.
 
 ### Themes and keywords
+NB: We can add maybe two or three more additional themes if needed.
+Link to [CSV](https://github.com/sarachodosh/workshop1-nietzsche/blob/main/themes.csv)
 
 | People        | Subjects | Philosophy terms |
 | -------       | ------------- | ------------- |
