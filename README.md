@@ -10,7 +10,14 @@ workshop1-nietzsche
 - Provide a voting function to determine whether the selected paragraph was positive or negatively with regards to its subject in order to collectively crowdsource and spark philosophical conversation. Our expert will also provide a few sentences of analysis. Possible links to further exploration or maybe related terms from the opposing thoughts on the same subject?
 - Furthermore, an additional search field for users to input their own terms for exploration.
 
+### Themes and keywords
 
+| People        | Subjects | Philosophy terms |
+| -------       | ------------- | ------------- |
+| Wagner        | Deutschland (Germany) | Wille (Will)  |
+| Schopenhauer  | Hinduismus (Hinduism) | Ding an sich (Kant's concept of 'think-in-itself)  |
+| Kant  | Buddhismus (Buddhism)  | [Wahrheit](https://de.pons.com/%C3%BCbersetzung/deutsch-spanisch/Wahrheit) (Truth) |
+| -  | Musik (Music)  | Tragische (Tragedy) |
 
 ### Original idea
 We would like to apply data visualisation to philosophical texts so that we can create alternative ways to engage with philosophical concepts. The focus is on a known narrative in the philosophical sphere, that of the philosopher Nietzsche and his relationship with Schopenhauer.
