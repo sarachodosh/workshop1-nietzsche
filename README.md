@@ -10,15 +10,8 @@ workshop1-nietzsche
 - Furthermore, an additional search field for users to input their own terms for exploration.
 
 ### Themes and keywords
-NB: We can add maybe two or three more additional themes if needed.
 Link to [CSV](https://github.com/sarachodosh/workshop1-nietzsche/blob/main/themes.csv)
 
-| People        | Subjects | Philosophy terms |
-| -------       | ------------- | ------------- |
-| Wagner        | Deutschland (Germany) | Wille (Will)  |
-| Schopenhauer  | Hinduismus (Hinduism) | Ding an sich (Kant's concept of 'think-in-itself)  |
-| Kant  | Buddhismus (Buddhism)  | [Wahrheit](https://de.pons.com/%C3%BCbersetzung/deutsch-spanisch/Wahrheit) (Truth) |
-| -  | Musik (Music)  | Tragische (Tragedy) |
 
 ### Original idea
 We would like to apply data visualisation to philosophical texts so that we can create alternative ways to engage with philosophical concepts. The focus is on a known narrative in the philosophical sphere, that of the philosopher Nietzsche and his relationship with Schopenhauer.
