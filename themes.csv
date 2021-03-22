@@ -1,5 +1,14 @@
-people, subjects, philosophy terms
-Wagner, Deutschland (Germany), Wille (Will)
-Schopenhauer, Hinduismus (Hinduism), Ding an sich (Kant's concept of 'think-in-itself)
-Kant, Buddhismus (Buddhism), Wahrheit (Truth)
-,Musik (Music), Tragische (Tragedy)
+Term,Topic,Translation,Related,Description,Variations
+Wagner,people,na,Musik,,
+Schopenhauer,people,na,,,"Schopenhauer, Schopenhaurs, Schopenhauerischen, schopenhauer, schopenhauers, schopenhauerischen"
+Kant,people,na,Ding an sich,,
+Deutschland,general,Germany,,,
+Musik,general,Music,Wagner,,
+Wille,philosophy,Will,,,
+Ding an sich,philosophy,Kant's concept of 'thing-in-itself,Kant,,
+Wahrheit,philosophy,Truth,,,
+Tragische,philosophy,Tragedy,,,
+Leiden,philosophy,Complaint,,,
+Hinduismus,religion,Hinduism,,,
+Buddhismus,religion,Buddhism,Maya's Veil,,
+Schleier der Maja,religion,Maya's Veil,Buddhism,,
