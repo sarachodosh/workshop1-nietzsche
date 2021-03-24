@@ -1,6 +1,10 @@
 <script>
 	import * as d3 from 'd3';
 	import { onMount } from 'svelte';
+
+	export let data;
+
+	console.log(data)
 </script>
 
 <main>
