@@ -1,9 +1,22 @@
 <script>
 	import * as d3 from 'd3';
 	import { onMount } from 'svelte';
+
+	export let data;
+	//console.log(data)
+	const testData = data[6]
+	console.log(testData)
 </script>
 
 <main>
+	<svg viewBox='0 0 500 500'>
+		{#if data}
+		<!-- {#each data as d} -->
+			<rect width='20' height={testData['length']/1000} fill='black'/>
+			<rect width='20' height='1' transform='translate(0, {(testData['frac_schop'][0]*testData['length'])/1000})' fill='red'/>
+		<!-- {/each} -->
+		{/if}
+	</svg>
 	
 </main>
 
