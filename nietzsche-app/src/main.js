@@ -1,5 +1,5 @@
 import App from './App.svelte';
-import * as d3 from 'd3';
+//import * as d3 from 'd3';
 
 fetch('https://raw.githubusercontent.com/sarachodosh/workshop1-nietzsche/main/data-scraping/data.json')
 .then((res) => res.json())

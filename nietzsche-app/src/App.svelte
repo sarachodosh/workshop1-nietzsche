@@ -1,12 +1,15 @@
 <script>
 	import * as d3 from 'd3';
 	import { onMount } from 'svelte';
+    import Rect-bar from './components/Rect-bar.svelte'
 
 	export let data;
 	//console.log(data)
 	const testData = data[6]
 	console.log(testData)
 </script>
+<Rect-bar />
+
 
 <main>
 	<svg viewBox='0 0 500 500'>
