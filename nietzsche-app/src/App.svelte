@@ -25,7 +25,9 @@
 		{#if testData}			
 		{#each data as d}
 			<rect width='20' height={d['length']/1000} fill='black'/>
-			<rect width='20' height='1' transform='translate(0, {data[]}'
+			{#each data.schop_matches as e}
+				<rect width='20' height='1' transform='translate(0, {}'/>
+			{/each}
 		{/each}
 		{/if}
 	</svg>
