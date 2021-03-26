@@ -22,16 +22,11 @@
 
 <main>
 	<svg viewBox='0 0 500 500'>
-		{#if testData}
-			<rect width='20' height={testData['length']/1000} fill='black'/>
-			{#each testData['frac_schop'] as frac}
-				<rect width='20' height='1' transform='translate(0, {frac[i]})' fill='red'/>
-			{/each}
-			
-		<!-- {#each data as d}
+		{#if testData}			
+		{#each data as d}
 			<rect width='20' height={d['length']/1000} fill='black'/>
 			<rect width='20' height='1' transform='translate(0, {data[]}'
-		{/each} -->
+		{/each}
 		{/if}
 	</svg>
 	
