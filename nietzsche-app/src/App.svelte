@@ -14,21 +14,39 @@
 	const ltgrey = '#8F8F8F'
 	const dkgrey = '#414142'
 
-	// heightScale = d3.scaleLinear()
-	// 			.domain[d3.extent(data, d => d['length'])]
-	// 			.range([height, 0])
+	const width = 1000;
+	const height = 800;
+
+	const padding = 5;
+
+	let heightScale = d3.scaleLinear()
+				.domain([d3.min(data, d => d.total_length), d3.max(data, d => d.total_length)])
+				.range([5, height/9 - padding]);
+	
+	let widthScale = d3.scaleBand()
+				.domain(d3.range(0,19))
+				.range([0, width-padding]);
+
+	// console.log(d3.range(0,19))
+	
+	const maxHeight = heightScale(d3.max(data, d => d.total_length));
+	const barWidth = widthScale.bandwidth();
+	console.log(barWidth)
+	
 
 </script>
 <!-- <Rect-bar /> -->
 
 
 <main>
-	<svg viewBox='0 0 500 500'>
+	<svg viewBox='0 0 {width} {height}'>
 		{#if data}			
 		{#each data as d}
-			<rect width='15' height={d.total_length/1000} fill={dkgrey} transform='translate({d.index*16}, {d.row*200})'/>
+			<rect width={barWidth} height={heightScale(d.total_length)} fill={dkgrey} 
+				transform='translate({d.index*(barWidth+padding)}, {d.row*maxHeight})'/>
 			{#each d.schop_matches.matched_positions as e}
-				<rect width='15' height='1' transform='translate({d.index*16}, {e/1000})' fill={pink}/>
+				<rect width={barWidth} height='1' 
+				transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={pink}/>
 			{/each}
 		{/each}
 		{/if}
@@ -44,16 +62,9 @@
 		margin: 0 auto;
 	}
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
 	@media (min-width: 640px) {
 		main {
-			max-width: none;
+			max-width: 1200px;
 		}
 	}
 </style>
