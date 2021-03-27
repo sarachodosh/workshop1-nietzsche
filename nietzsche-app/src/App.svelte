@@ -14,9 +14,9 @@
 	const ltgrey = '#8F8F8F'
 	const dkgrey = '#414142'
 
-	heightScale = d3.scaleLinear()
-				.domain[d3.extent(data, d => d['length'])]
-				.range([height, 0])
+	// heightScale = d3.scaleLinear()
+	// 			.domain[d3.extent(data, d => d['length'])]
+	// 			.range([height, 0])
 
 </script>
 <!-- <Rect-bar /> -->
@@ -26,7 +26,7 @@
 	<svg viewBox='0 0 500 500'>
 		{#if data}			
 		{#each data as d}
-			<rect width='15' height={d['length']/1000} fill={dkgrey} transform='translate({d.index*16}, 0)'/>
+			<rect width='15' height={d.total_length/1000} fill={dkgrey} transform='translate({d.index*16}, {d.row*200})'/>
 			{#each d.schop_matches.matched_positions as e}
 				<rect width='15' height='1' transform='translate({d.index*16}, {e/1000})' fill={pink}/>
 			{/each}
