@@ -1,20 +1,34 @@
 <script>
 	import * as d3 from 'd3';
 	import { onMount } from 'svelte';
+    // import Rect-bar from './components/Rect-bar.svelte'
 
 	export let data;
 	//console.log(data)
 	const testData = data[6]
-	console.log(testData)
+	// console.log(testData)
+	
+	// var i;
+	// function lineHandler(a) {
+	// 	for (i = 0; i < a.length; i++) {
+	// 		// return a[i]*122.926;
+	// 		console.log(a)
+	// 	}
+	// }
+
 </script>
+<!-- <Rect-bar /> -->
+
 
 <main>
 	<svg viewBox='0 0 500 500'>
-		{#if data}
-		<!-- {#each data as d} -->
-			<rect width='20' height={testData['length']/1000} fill='black'/>
-			<rect width='20' height='1' transform='translate(0, {(testData['frac_schop'][0]*testData['length'])/1000})' fill='red'/>
-		<!-- {/each} -->
+		{#if testData}			
+		{#each data as d}
+			<rect width='20' height={d['length']/1000} fill='black'/>
+			{#each data.schop_matches as e}
+				<rect width='20' height='1' transform='translate(0, {}'/>
+			{/each}
+		{/each}
 		{/if}
 	</svg>
 	
