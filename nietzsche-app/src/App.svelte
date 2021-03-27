@@ -35,8 +35,6 @@
 	
 
 </script>
-<!-- <Rect-bar /> -->
-
 
 <main>
 	<svg viewBox='0 0 {width} {height}'>
@@ -44,9 +42,64 @@
 		{#each data as d}
 			<rect width={barWidth} height={heightScale(d.total_length)} fill={dkgrey} 
 				transform='translate({d.index*(barWidth+padding)}, {d.row*maxHeight})'/>
+			<!-- PEOPLE -->
 			{#each d.schop_matches.matched_positions as e}
 				<rect width={barWidth} height='1' 
 				transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={pink}/>
+			{/each}
+			{#each d.wagn_matches.matched_positions as e}
+				<rect width={barWidth} height='1' 
+				transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={pink}/>
+			{/each}
+			{#each d.kant_matches.matched_positions as e}
+				<rect width={barWidth} height='1' 
+				transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={pink}/>
+			{/each}
+
+			<!-- GENERAL -->
+			{#each d.deutch_matches.matched_positions as e}
+				<rect width={barWidth} height='1' 
+				transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={ltgrey}/>
+			{/each}
+			{#each d.musik_matches.matched_positions as e}
+				<rect width={barWidth} height='1' 
+				transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={ltgrey}/>
+			{/each}
+
+			<!-- PHILOSOPHY -->
+			{#each d.wille_matches.matched_positions as e}
+				<rect width={barWidth} height='1' 
+				transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={blue}/>
+			{/each}
+			{#each d.ding_matches.matched_positions as e}
+				<rect width={barWidth} height='1' 
+				transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={blue}/>
+			{/each}
+			{#each d.wahr_matches.matched_positions as e}
+				<rect width={barWidth} height='1' 
+				transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={blue}/>
+			{/each}
+			{#each d.tragische_matches.matched_positions as e}
+				<rect width={barWidth} height='1' 
+				transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={blue}/>
+			{/each}
+			{#each d.leiden_matches.matched_positions as e}
+				<rect width={barWidth} height='1' 
+				transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={blue}/>
+			{/each}
+
+			<!-- RELIGION -->
+			{#each d.hindu_matches.matched_positions as e}
+				<rect width={barWidth} height='1' 
+				transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={yellow}/>
+			{/each}
+			{#each d.budd_matches.matched_positions as e}
+				<rect width={barWidth} height='1' 
+				transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={yellow}/>
+			{/each}
+			{#each d.schleier_matches.matched_positions as e}
+				<rect width={barWidth} height='1' 
+				transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={yellow}/>
 			{/each}
 		{/each}
 		{/if}
