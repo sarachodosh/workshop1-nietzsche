@@ -4,30 +4,50 @@
     // import Rect-bar from './components/Rect-bar.svelte'
 
 	export let data;
-	console.log(data)
+	// console.log(data)
 	const testData = data[6]
 	// console.log(testData)
 	
-	// var i;
-	// function lineHandler(a) {
-	// 	for (i = 0; i < a.length; i++) {
-	// 		// return a[i]*122.926;
-	// 		console.log(a)
-	// 	}
-	// }
+	const pink = '#E12179';
+	const yellow = '#BB9F06';
+	const blue = '#087F8C';
+	const ltgrey = '#8F8F8F'
+	const dkgrey = '#414142'
+
+	const width = 1000;
+	const height = 800;
+
+	const padding = 5;
+
+	let heightScale = d3.scaleLinear()
+				.domain([d3.min(data, d => d.total_length), d3.max(data, d => d.total_length)])
+				.range([5, height/9 - padding]);
+	
+	let widthScale = d3.scaleBand()
+				.domain(d3.range(0,19))
+				.range([0, width-padding]);
+
+	// console.log(d3.range(0,19))
+	
+	const maxHeight = heightScale(d3.max(data, d => d.total_length));
+	const barWidth = widthScale.bandwidth();
+	console.log(barWidth)
+	
 
 </script>
 <!-- <Rect-bar /> -->
 
 
 <main>
-	<svg viewBox='0 0 500 500'>
-		{#if testData}			
+	<svg viewBox='0 0 {width} {height}'>
+		{#if data}			
 		{#each data as d}
-			<rect width='20' height={d.length/1000} fill='black' transform='translate({d.index}, 0)'/>
-			<!-- {#each data.schop_matches as e, i}
-				<rect width='20' height='1' transform='translate(0, {e.frac_schop[i]}'/>
-			{/each} -->
+			<rect width={barWidth} height={heightScale(d.total_length)} fill={dkgrey} 
+				transform='translate({d.index*(barWidth+padding)}, {d.row*maxHeight})'/>
+			{#each d.schop_matches.matched_positions as e}
+				<rect width={barWidth} height='1' 
+				transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={pink}/>
+			{/each}
 		{/each}
 		{/if}
 	</svg>
@@ -42,16 +62,9 @@
 		margin: 0 auto;
 	}
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
 	@media (min-width: 640px) {
 		main {
-			max-width: none;
+			max-width: 1200px;
 		}
 	}
 </style>
