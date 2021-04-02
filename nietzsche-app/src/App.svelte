@@ -47,8 +47,19 @@
 
 	//Trying swipe on mouse scroll
 	import { Swiper, SwiperSlide } from 'swiper/svelte';
-	import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-	SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+	import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Mousewheel} from 'swiper';
+	SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Mousewheel]);
+
+	const options = {
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  };
 </script>
 
 
@@ -64,10 +75,9 @@
 	direction={'vertical'}
     spaceBetween={30}
     slidesPerView={1}
-	mousewheel={true}
 	autoHeight={true}
-	pagination={{ clickable: true }}
-	scrollbar={{ draggable: true }}
+	mousewheel={true}
+	speed={1000}
     on:slideChange={() => console.log('slide change')}
     on:swiper={(e) => console.log(e.detail[0])}
   	>
@@ -153,8 +163,10 @@
 
     <SwiperSlide>
 		<h1>Slide 4</h1>
-
 	</SwiperSlide>
+	<div class="swiper-pagination" slot="pagination"></div>
+ 	<div class="swiper-button-next" slot="button-next"></div>
+  	<div class="swiper-button-prev" slot="button-prev"></div>
   </Swiper>
 
 </main>
