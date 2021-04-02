@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1440 1483" style="enable-background:new 0 0 1440 1483;" xml:space="preserve">
+	 viewBox="0 0 1440 1000" style="enable-background:new 0 0 1440 1000;" xml:space="preserve">
 <style type="text/css">
 	.st0{opacity:0.5;fill:url(#SVGID_1_);enable-background:new    ;}
 	.st1{opacity:0.4;fill:url(#SVGID_2_);fill-opacity:0.6;enable-background:new    ;}
@@ -13,69 +13,69 @@
 	.st7{fill:none;stroke:#F8F0E4;stroke-width:2.1759;stroke-miterlimit:10;}
 	.st8{fill:#FFFFFF;}
 	.st9{font-family:'PlayfairDisplay-Black';}
-	.st10{font-size:80px;}
+	.st10{font-size:60px;}
 	.st11{fill:none;}
-	.st12{opacity:0.7;}
+	.st12{opacity:0.9;}
 	.st13{font-family:'PlayfairDisplay-Regular';}
-	.st14{font-size:30px;}
+	.st14{font-size:25px;}
 	.st15{font-family:'PlayfairDisplay-Bold';}
 	.st16{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
 </style>
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1968.4692" y1="922.2448" x2="1315.1177" y2="1340.1663" gradientTransform="matrix(1 0 0 -1 0 1484)">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1855.691" y1="791.8397" x2="1202.3395" y2="1209.7612" gradientTransform="matrix(1 0 0 -1 0 1226.5563)">
 	<stop  offset="0" style="stop-color:#C0FFF4"/>
 	<stop  offset="1" style="stop-color:#222222"/>
 </linearGradient>
-<path class="st0" d="M1968.5,561.8c115.4-180.4,62.7-420.2-117.7-535.6c-180.4-115.4-420.2-62.7-535.6,117.7
-	c-115.4,180.4-62.7,420.2,117.7,535.6C1613.2,794.9,1853.1,742.2,1968.5,561.8z"/>
-<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="1201.0203" y1="1356.5812" x2="1387.7705" y2="1406.621" gradientTransform="matrix(1 0 0 -1 0 1484)">
+<path class="st0" d="M1855.7,434.7c115.4-180.4,62.7-420.2-117.7-535.6c-180.4-115.4-420.2-62.7-535.6,117.7
+	c-115.4,180.4-62.7,420.2,117.7,535.6C1500.5,667.8,1740.3,615.1,1855.7,434.7z"/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="1005.7625" y1="1251.4249" x2="1192.5128" y2="1301.4646" gradientTransform="matrix(1 0 0 -1 0 1226.5563)">
 	<stop  offset="0" style="stop-color:#C0FFF4"/>
 	<stop  offset="1" style="stop-color:#222222"/>
 </linearGradient>
-<path class="st1" d="M1201,127.4c13.8,51.6,66.8,82.2,118.4,68.4c51.6-13.8,82.2-66.8,68.3-118.4C1374,25.8,1320.9-4.8,1269.4,9
-	C1217.8,22.8,1187.2,75.8,1201,127.4z"/>
-<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="1106" y1="412.5" x2="1579" y2="412.5" gradientTransform="matrix(1 0 0 -1 0 1484)">
+<path class="st1" d="M1005.8-24.9c13.8,51.6,66.8,82.2,118.4,68.4c51.6-13.8,82.2-66.8,68.3-118.4c-13.8-51.6-66.8-82.2-118.4-68.4
+	C1022.6-129.4,991.9-76.4,1005.8-24.9z"/>
+<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="1127.8823" y1="514.3842" x2="1600.8823" y2="514.3842" gradientTransform="matrix(1 0 0 -1 0 1226.5563)">
 	<stop  offset="0" style="stop-color:#E12179"/>
 	<stop  offset="1" style="stop-color:#222222"/>
 </linearGradient>
-<path class="st2" d="M1342.5,1308c130.6,0,236.5-105.9,236.5-236.5c0-130.6-105.9-236.5-236.5-236.5S1106,940.9,1106,1071.5
-	C1106,1202.1,1211.9,1308,1342.5,1308z"/>
-<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="-109.771" y1="311.7505" x2="506.723" y2="309.3005" gradientTransform="matrix(1 0 0 -1 0 1484)">
+<path class="st2" d="M1364.4,948.7c130.6,0,236.5-105.9,236.5-236.5c0-130.6-105.9-236.5-236.5-236.5s-236.5,105.9-236.5,236.5
+	C1127.9,842.8,1233.8,948.7,1364.4,948.7z"/>
+<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="-256.2143" y1="422.0511" x2="360.2798" y2="419.601" gradientTransform="matrix(1 0 0 -1 0 1226.5563)">
 	<stop  offset="0" style="stop-color:#C0FFF4"/>
 	<stop  offset="1" style="stop-color:#222222"/>
 </linearGradient>
-<path class="st3" d="M-109.8,1172.2c-0.7,170.2,136.8,308.8,307,309.5c170.2,0.7,308.8-136.8,309.5-307
-	c0.7-170.2-136.8-308.8-307-309.5S-109.1,1002-109.8,1172.2z"/>
-<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="-203.208" y1="599.416" x2="-203.208" y2="1375" gradientTransform="matrix(1 0 0 -1 0 1484)">
+<path class="st3" d="M-256.2,804.5c-0.7,170.2,136.8,308.8,307,309.5c170.2,0.7,308.8-136.8,309.5-307
+	c0.7-170.2-136.8-308.8-307-309.5S-255.5,634.3-256.2,804.5z"/>
+<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="-166.1764" y1="522.8751" x2="-166.1764" y2="1298.4591" gradientTransform="matrix(1 0 0 -1 0 1226.5563)">
 	<stop  offset="0" style="stop-color:#E12179"/>
 	<stop  offset="1" style="stop-color:#222222"/>
 </linearGradient>
-<path class="st4" d="M-203.2,884.6C11,884.6,184.6,711,184.6,496.8S11,109-203.2,109S-591,282.6-591,496.8S-417.4,884.6-203.2,884.6
-	z"/>
-<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="-1.849365e-02" y1="1221.037" x2="-1.849365e-02" y2="1745" gradientTransform="matrix(1 0 0 -1 0 1484)">
+<path class="st4" d="M-166.2,703.7c214.2,0,387.8-173.6,387.8-387.8S48-71.9-166.2-71.9S-554,101.7-554,315.9
+	S-380.3,703.7-166.2,703.7z"/>
+<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="171.6736" y1="1100.7314" x2="171.6736" y2="1624.6945" gradientTransform="matrix(1 0 0 -1 0 1226.5563)">
 	<stop  offset="0" style="stop-color:#E12179"/>
 	<stop  offset="1" style="stop-color:#222222"/>
 </linearGradient>
-<path class="st5" d="M0,263c144.7,0,262-117.3,262-262c0-144.7-117.3-262-262-262c-144.7,0-262,117.3-262,262
-	C-262,145.7-144.7,263,0,263z"/>
-<linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="126.751" y1="1107.7479" x2="174.252" y2="1155.249" gradientTransform="matrix(1 0 0 -1 0 1484)">
+<path class="st5" d="M171.7,125.8c144.7,0,262-117.3,262-262c0-144.7-117.3-262-262-262c-144.7,0-262,117.3-262,262
+	C-90.3,8.5,27,125.8,171.7,125.8z"/>
+<linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="170.5157" y1="985.7592" x2="218.0167" y2="1033.2601" gradientTransform="matrix(1 0 0 -1 0 1226.5563)">
 	<stop  offset="0" style="stop-color:#C0FFF4"/>
 	<stop  offset="1" style="stop-color:#222222"/>
 </linearGradient>
-<path class="st6" d="M126.8,328.8c-13.1,13.1-13.1,34.4,0,47.5c13.1,13.1,34.4,13.1,47.5,0c13.1-13.1,13.1-34.4,0-47.5
-	C161.1,315.6,139.9,315.6,126.8,328.8z"/>
-<path class="st7" d="M1675.2,526.6c214.2,0,387.8-173.6,387.8-387.8c0-214.2-173.6-387.8-387.8-387.8s-387.8,173.6-387.8,387.8
-	C1287.4,353,1461,526.6,1675.2,526.6z"/>
-<text transform="matrix(1 0 0 1 381.2981 371.6433)"><tspan x="0" y="0" class="st8 st9 st10">Into the mind of</tspan><tspan x="0" y="96" class="st8 st9 st10">Friedrich Nietzsche</tspan></text>
-<rect x="383.5" y="542.4" class="st11" width="587.2" height="549.7"/>
-<text transform="matrix(1 0 0 1 383.5383 565.9186)" class="st12"><tspan x="0" y="0" class="st8 st13 st14">A visual exploration of the </tspan><tspan x="359.2" y="0" class="st8 st15 st14">posthumous </tspan><tspan x="0" y="36" class="st8 st15 st14">fragments </tspan><tspan x="148.8" y="36" class="st8 st13 st14">that reveal the German </tspan><tspan x="0" y="72" class="st8 st13 st14">philosopher’s changing opinions towards </tspan><tspan x="0" y="108" class="st8 st15 st14">Schopenhauer</tspan><tspan x="200.2" y="108" class="st8 st13 st14">, from the young Nietzsche </tspan><tspan x="0" y="144" class="st8 st13 st14">to the wildy different mature Nietzsche of </tspan><tspan x="0" y="180" class="st8 st13 st14">latter  years.</tspan></text>
-<image style="overflow:visible;" width="741" height="517" xlink:href="build/assets/header1.png"  transform="matrix(1 0 0 1 349.5 844.1203)">
-</image>
+<path class="st6" d="M170.5,193.3c-13.1,13.1-13.1,34.4,0,47.5c13.1,13.1,34.4,13.1,47.5,0c13.1-13.1,13.1-34.4,0-47.5
+	C204.9,180.2,183.6,180.2,170.5,193.3z"/>
+<path class="st7" d="M1562.4,399.6c214.2,0,387.8-173.6,387.8-387.8c0-214.2-173.6-387.8-387.8-387.8s-387.8,173.6-387.8,387.8
+	C1174.6,226,1348.3,399.6,1562.4,399.6z"/>
+<text transform="matrix(1 0 0 1 494.8296 639.6409)"><tspan x="0" y="0" class="st8 st9 st10">Into the mind of</tspan><tspan x="-49.8" y="72" class="st8 st9 st10">Friedrich Nietzsche</tspan></text>
+<rect x="500.7" y="760.8" class="st11" width="442.3" height="185.4"/>
+<text transform="matrix(1 0 0 1 500.6647 780.3788)" class="st12"><tspan x="0" y="0" class="st8 st13 st14">A visual exploration of the </tspan><tspan x="0" y="30" class="st8 st15 st14">posthumous fragments </tspan><tspan x="273.1" y="30" class="st8 st13 st14">that reveal the </tspan><tspan x="0" y="60" class="st8 st13 st14">German philosopher’s changing </tspan><tspan x="0" y="90" class="st8 st13 st14">opinions towards </tspan><tspan x="201.1" y="90" class="st8 st15 st14">Schopenhauer</tspan><tspan x="368" y="90" class="st8 st13 st14">, from </tspan><tspan x="0" y="120" class="st8 st13 st14">the young Nietzsche to the wildy </tspan><tspan x="0" y="150" class="st8 st13 st14">different mature Nietzsche of latter  </tspan></text>
 <g>
 	<g>
-		<line class="st16" x1="1029.9" y1="556.8" x2="1029.9" y2="719.5"/>
+		<polyline class="st16" points="719.3,972.5 719.5,980.2 720.2,1023 		"/>
 		<g>
-			<polygon class="st8" points="1023.8,714.6 1024.9,713.5 1029.9,719 1034.9,713.5 1036,714.6 1029.9,721.2 			"/>
+			<polygon class="st8" points="714,1018.1 715,1017.1 720.2,1022.4 725.1,1016.9 726.2,1017.9 720.2,1024.6 			"/>
 		</g>
 	</g>
 </g>
+<image style="overflow:visible;" width="1482" height="1034" xlink:href="build/assets/header1.png"  transform="matrix(0.5 0 0 0.5 320.2908 37.5813)">
+</image>
 </svg>
