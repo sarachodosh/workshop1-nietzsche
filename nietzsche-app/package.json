@@ -18,6 +18,11 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "sirv-cli": "^1.0.0"
+    "bufferutil": "^4.0.3",
+    "d3": "^6.6.2",
+    "sirv-cli": "^1.0.0",
+    "svelte-inline-svg": "^1.0.8",
+    "swiper": "^6.5.3",
+    "utf-8-validate": "^5.0.4"
   }
 }
