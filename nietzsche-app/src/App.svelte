@@ -66,8 +66,7 @@
     slidesPerView={1}
 	mousewheel={true}
 	autoHeight={true}
-	navigation
-	pagination={{ el: '.swiper-pagination', clickable: true }}
+	pagination={{ clickable: true }}
 	scrollbar={{ draggable: true }}
     on:slideChange={() => console.log('slide change')}
     on:swiper={(e) => console.log(e.detail[0])}
