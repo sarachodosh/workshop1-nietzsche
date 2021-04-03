@@ -35,7 +35,7 @@ Anyone who would benefit from this alternative way of visually parsing philosoph
 
 ### Goals
 - [X] Build a scraper to pull all the Posthumous Fragments from this website.
-- [] Find an appropriate sentiment analysis model to train with the scraped data. Ensure all ethical considerations are applied. //We ended up choosing to include a crowdsourced sentiment analysis in order to **spark** philosophical questions and thoughts rather than **impose** them.
+- [ ] Find an appropriate sentiment analysis model to train with the scraped data. Ensure all ethical considerations are applied. //We ended up choosing to include a crowdsourced sentiment analysis in order to **spark** philosophical questions and thoughts rather than **impose** them.
 - [X] Visualise the data in a format that is first narrative, and second exploratory.
 
 ### About the data
