@@ -34,9 +34,9 @@ We think there is great potential in parsing philosophical texts into a visual f
 Anyone who would benefit from this alternative way of visually parsing philosophical texts, i.e., researchers, students, general population.
 
 ### Goals
-- [X]Build a scraper to pull all the Posthumous Fragments from this website.
+- [X] Build a scraper to pull all the Posthumous Fragments from this website.
 - [] Find an appropriate sentiment analysis model to train with the scraped data. Ensure all ethical considerations are applied. //We ended up choosing to include a crowdsourced sentiment analysis in order to **spark** philosophical questions and thoughts rather than **impose** them.
-- [X]Visualise the data in a format that is first narrative, and second exploratory.
+- [X] Visualise the data in a format that is first narrative, and second exploratory.
 
 ### About the data
 The data is taken from Nietzsche Source (http://www.nietzschesource.org/#eKGWB/NF-1869,1). More details about the particular edition we are using can be found here.
