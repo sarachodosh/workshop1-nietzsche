@@ -28566,22 +28566,42 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (85:1) <SwiperSlide>
+    // (77:1) <SwiperSlide>
     function create_default_slot_4(ctx) {
-    	let h1;
+    	let div;
+    	let inlinesvg;
+    	let current;
+
+    	inlinesvg = new Inline_svg({
+    			props: { src: introDesktop },
+    			$$inline: true
+    		});
 
     	const block = {
     		c: function create() {
-    			h1 = element("h1");
-    			h1.textContent = "Hello, I am section 1";
-    			attr_dev(h1, "class", "svelte-1rhjl37");
-    			add_location(h1, file, 85, 3, 2036);
+    			div = element("div");
+    			create_component(inlinesvg.$$.fragment);
+    			attr_dev(div, "class", "full-width svelte-r6dqds");
+    			add_location(div, file, 77, 2, 1918);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, h1, anchor);
+    			insert_dev(target, div, anchor);
+    			mount_component(inlinesvg, div, null);
+    			current = true;
+    		},
+    		p: noop$4,
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(inlinesvg.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(inlinesvg.$$.fragment, local);
+    			current = false;
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(h1);
+    			if (detaching) detach_dev(div);
+    			destroy_component(inlinesvg);
     		}
     	};
 
@@ -28589,14 +28609,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4.name,
     		type: "slot",
-    		source: "(85:1) <SwiperSlide>",
+    		source: "(77:1) <SwiperSlide>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (89:4) <SwiperSlide>
+    // (83:4) <SwiperSlide>
     function create_default_slot_3(ctx) {
     	let h1;
 
@@ -28604,8 +28624,8 @@ var app = (function () {
     		c: function create() {
     			h1 = element("h1");
     			h1.textContent = "Hello, I am section 2";
-    			attr_dev(h1, "class", "svelte-1rhjl37");
-    			add_location(h1, file, 89, 2, 2104);
+    			attr_dev(h1, "class", "svelte-r6dqds");
+    			add_location(h1, file, 83, 2, 2023);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -28619,14 +28639,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3.name,
     		type: "slot",
-    		source: "(89:4) <SwiperSlide>",
+    		source: "(83:4) <SwiperSlide>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (96:3) {#if data}
+    // (90:3) {#if data}
     function create_if_block(ctx) {
     	let each_1_anchor;
     	let each_value = /*data*/ ctx[0];
@@ -28687,14 +28707,14 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(96:3) {#if data}",
+    		source: "(90:3) {#if data}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (101:4) {#each d.schop_matches.matched_positions as e}
+    // (95:4) {#each d.schop_matches.matched_positions as e}
     function create_each_block_13(ctx) {
     	let rect;
     	let rect_transform_value;
@@ -28706,7 +28726,7 @@ var app = (function () {
     			attr_dev(rect, "height", "1");
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", pink);
-    			add_location(rect, file, 101, 5, 2528);
+    			add_location(rect, file, 95, 5, 2447);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -28725,14 +28745,14 @@ var app = (function () {
     		block,
     		id: create_each_block_13.name,
     		type: "each",
-    		source: "(101:4) {#each d.schop_matches.matched_positions as e}",
+    		source: "(95:4) {#each d.schop_matches.matched_positions as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (105:4) {#each d.wagn_matches.matched_positions as e}
+    // (99:4) {#each d.wagn_matches.matched_positions as e}
     function create_each_block_12(ctx) {
     	let rect;
     	let rect_transform_value;
@@ -28744,7 +28764,7 @@ var app = (function () {
     			attr_dev(rect, "height", "1");
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", pink);
-    			add_location(rect, file, 105, 5, 2737);
+    			add_location(rect, file, 99, 5, 2656);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -28763,14 +28783,14 @@ var app = (function () {
     		block,
     		id: create_each_block_12.name,
     		type: "each",
-    		source: "(105:4) {#each d.wagn_matches.matched_positions as e}",
+    		source: "(99:4) {#each d.wagn_matches.matched_positions as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (109:4) {#each d.kant_matches.matched_positions as e}
+    // (103:4) {#each d.kant_matches.matched_positions as e}
     function create_each_block_11(ctx) {
     	let rect;
     	let rect_transform_value;
@@ -28782,7 +28802,7 @@ var app = (function () {
     			attr_dev(rect, "height", "1");
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", pink);
-    			add_location(rect, file, 109, 5, 2946);
+    			add_location(rect, file, 103, 5, 2865);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -28801,14 +28821,14 @@ var app = (function () {
     		block,
     		id: create_each_block_11.name,
     		type: "each",
-    		source: "(109:4) {#each d.kant_matches.matched_positions as e}",
+    		source: "(103:4) {#each d.kant_matches.matched_positions as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (115:4) {#each d.deutch_matches.matched_positions as e}
+    // (109:4) {#each d.deutch_matches.matched_positions as e}
     function create_each_block_10(ctx) {
     	let rect;
     	let rect_transform_value;
@@ -28820,7 +28840,7 @@ var app = (function () {
     			attr_dev(rect, "height", "1");
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", ltgrey);
-    			add_location(rect, file, 115, 5, 3180);
+    			add_location(rect, file, 109, 5, 3099);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -28839,14 +28859,14 @@ var app = (function () {
     		block,
     		id: create_each_block_10.name,
     		type: "each",
-    		source: "(115:4) {#each d.deutch_matches.matched_positions as e}",
+    		source: "(109:4) {#each d.deutch_matches.matched_positions as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (119:4) {#each d.musik_matches.matched_positions as e}
+    // (113:4) {#each d.musik_matches.matched_positions as e}
     function create_each_block_9(ctx) {
     	let rect;
     	let rect_transform_value;
@@ -28858,7 +28878,7 @@ var app = (function () {
     			attr_dev(rect, "height", "1");
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", ltgrey);
-    			add_location(rect, file, 119, 5, 3392);
+    			add_location(rect, file, 113, 5, 3311);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -28877,14 +28897,14 @@ var app = (function () {
     		block,
     		id: create_each_block_9.name,
     		type: "each",
-    		source: "(119:4) {#each d.musik_matches.matched_positions as e}",
+    		source: "(113:4) {#each d.musik_matches.matched_positions as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (125:4) {#each d.wille_matches.matched_positions as e}
+    // (119:4) {#each d.wille_matches.matched_positions as e}
     function create_each_block_8(ctx) {
     	let rect;
     	let rect_transform_value;
@@ -28896,7 +28916,7 @@ var app = (function () {
     			attr_dev(rect, "height", "1");
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", blue);
-    			add_location(rect, file, 125, 5, 3630);
+    			add_location(rect, file, 119, 5, 3549);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -28915,14 +28935,14 @@ var app = (function () {
     		block,
     		id: create_each_block_8.name,
     		type: "each",
-    		source: "(125:4) {#each d.wille_matches.matched_positions as e}",
+    		source: "(119:4) {#each d.wille_matches.matched_positions as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (129:4) {#each d.ding_matches.matched_positions as e}
+    // (123:4) {#each d.ding_matches.matched_positions as e}
     function create_each_block_7(ctx) {
     	let rect;
     	let rect_transform_value;
@@ -28934,7 +28954,7 @@ var app = (function () {
     			attr_dev(rect, "height", "1");
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", blue);
-    			add_location(rect, file, 129, 5, 3839);
+    			add_location(rect, file, 123, 5, 3758);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -28953,14 +28973,14 @@ var app = (function () {
     		block,
     		id: create_each_block_7.name,
     		type: "each",
-    		source: "(129:4) {#each d.ding_matches.matched_positions as e}",
+    		source: "(123:4) {#each d.ding_matches.matched_positions as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (133:4) {#each d.wahr_matches.matched_positions as e}
+    // (127:4) {#each d.wahr_matches.matched_positions as e}
     function create_each_block_6(ctx) {
     	let rect;
     	let rect_transform_value;
@@ -28972,7 +28992,7 @@ var app = (function () {
     			attr_dev(rect, "height", "1");
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", blue);
-    			add_location(rect, file, 133, 5, 4048);
+    			add_location(rect, file, 127, 5, 3967);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -28991,14 +29011,14 @@ var app = (function () {
     		block,
     		id: create_each_block_6.name,
     		type: "each",
-    		source: "(133:4) {#each d.wahr_matches.matched_positions as e}",
+    		source: "(127:4) {#each d.wahr_matches.matched_positions as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (137:4) {#each d.tragische_matches.matched_positions as e}
+    // (131:4) {#each d.tragische_matches.matched_positions as e}
     function create_each_block_5(ctx) {
     	let rect;
     	let rect_transform_value;
@@ -29010,7 +29030,7 @@ var app = (function () {
     			attr_dev(rect, "height", "1");
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", blue);
-    			add_location(rect, file, 137, 5, 4262);
+    			add_location(rect, file, 131, 5, 4181);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -29029,14 +29049,14 @@ var app = (function () {
     		block,
     		id: create_each_block_5.name,
     		type: "each",
-    		source: "(137:4) {#each d.tragische_matches.matched_positions as e}",
+    		source: "(131:4) {#each d.tragische_matches.matched_positions as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (141:4) {#each d.leiden_matches.matched_positions as e}
+    // (135:4) {#each d.leiden_matches.matched_positions as e}
     function create_each_block_4(ctx) {
     	let rect;
     	let rect_transform_value;
@@ -29048,7 +29068,7 @@ var app = (function () {
     			attr_dev(rect, "height", "1");
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", blue);
-    			add_location(rect, file, 141, 5, 4473);
+    			add_location(rect, file, 135, 5, 4392);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -29067,14 +29087,14 @@ var app = (function () {
     		block,
     		id: create_each_block_4.name,
     		type: "each",
-    		source: "(141:4) {#each d.leiden_matches.matched_positions as e}",
+    		source: "(135:4) {#each d.leiden_matches.matched_positions as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (147:4) {#each d.hindu_matches.matched_positions as e}
+    // (141:4) {#each d.hindu_matches.matched_positions as e}
     function create_each_block_3(ctx) {
     	let rect;
     	let rect_transform_value;
@@ -29086,7 +29106,7 @@ var app = (function () {
     			attr_dev(rect, "height", "1");
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", yellow);
-    			add_location(rect, file, 147, 5, 4707);
+    			add_location(rect, file, 141, 5, 4626);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -29105,14 +29125,14 @@ var app = (function () {
     		block,
     		id: create_each_block_3.name,
     		type: "each",
-    		source: "(147:4) {#each d.hindu_matches.matched_positions as e}",
+    		source: "(141:4) {#each d.hindu_matches.matched_positions as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (151:4) {#each d.budd_matches.matched_positions as e}
+    // (145:4) {#each d.budd_matches.matched_positions as e}
     function create_each_block_2(ctx) {
     	let rect;
     	let rect_transform_value;
@@ -29124,7 +29144,7 @@ var app = (function () {
     			attr_dev(rect, "height", "1");
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", yellow);
-    			add_location(rect, file, 151, 5, 4918);
+    			add_location(rect, file, 145, 5, 4837);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -29143,14 +29163,14 @@ var app = (function () {
     		block,
     		id: create_each_block_2.name,
     		type: "each",
-    		source: "(151:4) {#each d.budd_matches.matched_positions as e}",
+    		source: "(145:4) {#each d.budd_matches.matched_positions as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (155:4) {#each d.schleier_matches.matched_positions as e}
+    // (149:4) {#each d.schleier_matches.matched_positions as e}
     function create_each_block_1(ctx) {
     	let rect;
     	let rect_transform_value;
@@ -29162,7 +29182,7 @@ var app = (function () {
     			attr_dev(rect, "height", "1");
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", yellow);
-    			add_location(rect, file, 155, 5, 5133);
+    			add_location(rect, file, 149, 5, 5052);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -29181,14 +29201,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(155:4) {#each d.schleier_matches.matched_positions as e}",
+    		source: "(149:4) {#each d.schleier_matches.matched_positions as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (97:3) {#each data as d}
+    // (91:3) {#each data as d}
     function create_each_block(ctx) {
     	let rect;
     	let rect_height_value;
@@ -29395,7 +29415,7 @@ var app = (function () {
     			attr_dev(rect, "height", rect_height_value = /*heightScale*/ ctx[1](/*d*/ ctx[9].total_length));
     			attr_dev(rect, "fill", dkgrey);
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2] + ")");
-    			add_location(rect, file, 97, 4, 2299);
+    			add_location(rect, file, 91, 4, 2218);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -29834,14 +29854,14 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(97:3) {#each data as d}",
+    		source: "(91:3) {#each data as d}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (93:4) <SwiperSlide>
+    // (87:4) <SwiperSlide>
     function create_default_slot_2(ctx) {
     	let h1;
     	let t1;
@@ -29855,10 +29875,10 @@ var app = (function () {
     			t1 = space();
     			svg = svg_element("svg");
     			if (if_block) if_block.c();
-    			attr_dev(h1, "class", "svelte-1rhjl37");
-    			add_location(h1, file, 93, 2, 2172);
+    			attr_dev(h1, "class", "svelte-r6dqds");
+    			add_location(h1, file, 87, 2, 2091);
     			attr_dev(svg, "viewBox", "0 0 " + width + " " + height);
-    			add_location(svg, file, 94, 2, 2220);
+    			add_location(svg, file, 88, 2, 2139);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -29892,14 +29912,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2.name,
     		type: "slot",
-    		source: "(93:4) <SwiperSlide>",
+    		source: "(87:4) <SwiperSlide>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (164:4) <SwiperSlide>
+    // (158:4) <SwiperSlide>
     function create_default_slot_1(ctx) {
     	let h1;
 
@@ -29907,8 +29927,8 @@ var app = (function () {
     		c: function create() {
     			h1 = element("h1");
     			h1.textContent = "Slide 4";
-    			attr_dev(h1, "class", "svelte-1rhjl37");
-    			add_location(h1, file, 164, 2, 5355);
+    			attr_dev(h1, "class", "svelte-r6dqds");
+    			add_location(h1, file, 158, 2, 5274);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -29922,14 +29942,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(164:4) <SwiperSlide>",
+    		source: "(158:4) <SwiperSlide>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (74:1) <Swiper  direction={'vertical'}     spaceBetween={30}     slidesPerView={1}  autoHeight={true}  mousewheel={true}  speed={1000}     on:slideChange={() => console.log('slide change')}     on:swiper={(e) => console.log(e.detail[0])}    >
+    // (67:1) <Swiper  direction={'vertical'}     spaceBetween={30}     slidesPerView={1}  mousewheel={true}  speed={1000}     on:slideChange={() => console.log('slide change')}     on:swiper={(e) => console.log(e.detail[0])}    >
     function create_default_slot(ctx) {
     	let swiperslide0;
     	let t0;
@@ -30052,14 +30072,14 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(74:1) <Swiper  direction={'vertical'}     spaceBetween={30}     slidesPerView={1}  autoHeight={true}  mousewheel={true}  speed={1000}     on:slideChange={() => console.log('slide change')}     on:swiper={(e) => console.log(e.detail[0])}    >",
+    		source: "(67:1) <Swiper  direction={'vertical'}     spaceBetween={30}     slidesPerView={1}  mousewheel={true}  speed={1000}     on:slideChange={() => console.log('slide change')}     on:swiper={(e) => console.log(e.detail[0])}    >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (167:1) 
+    // (161:1) 
     function create_pagination_slot(ctx) {
     	let div;
 
@@ -30068,7 +30088,7 @@ var app = (function () {
     			div = element("div");
     			attr_dev(div, "class", "swiper-pagination");
     			attr_dev(div, "slot", "pagination");
-    			add_location(div, file, 166, 1, 5389);
+    			add_location(div, file, 160, 1, 5308);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -30082,14 +30102,14 @@ var app = (function () {
     		block,
     		id: create_pagination_slot.name,
     		type: "slot",
-    		source: "(167:1) ",
+    		source: "(161:1) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (168:2) 
+    // (162:2) 
     function create_button_next_slot(ctx) {
     	let div;
 
@@ -30098,7 +30118,7 @@ var app = (function () {
     			div = element("div");
     			attr_dev(div, "class", "swiper-button-next");
     			attr_dev(div, "slot", "button-next");
-    			add_location(div, file, 167, 2, 5447);
+    			add_location(div, file, 161, 2, 5366);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -30112,14 +30132,14 @@ var app = (function () {
     		block,
     		id: create_button_next_slot.name,
     		type: "slot",
-    		source: "(168:2) ",
+    		source: "(162:2) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (169:3) 
+    // (163:3) 
     function create_button_prev_slot(ctx) {
     	let div;
 
@@ -30128,7 +30148,7 @@ var app = (function () {
     			div = element("div");
     			attr_dev(div, "class", "swiper-button-prev");
     			attr_dev(div, "slot", "button-prev");
-    			add_location(div, file, 168, 3, 5508);
+    			add_location(div, file, 162, 3, 5427);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -30142,7 +30162,7 @@ var app = (function () {
     		block,
     		id: create_button_prev_slot.name,
     		type: "slot",
-    		source: "(169:3) ",
+    		source: "(163:3) ",
     		ctx
     	});
 
@@ -30152,25 +30172,15 @@ var app = (function () {
     function create_fragment(ctx) {
     	let style;
     	let t1;
-    	let div1;
-    	let div0;
-    	let inlinesvg;
-    	let t2;
     	let main;
     	let swiper;
     	let current;
-
-    	inlinesvg = new Inline_svg({
-    			props: { src: introDesktop },
-    			$$inline: true
-    		});
 
     	swiper = new Swiper$1({
     			props: {
     				direction: "vertical",
     				spaceBetween: 30,
     				slidesPerView: 1,
-    				autoHeight: true,
     				mousewheel: true,
     				speed: 1000,
     				$$slots: {
@@ -30192,19 +30202,11 @@ var app = (function () {
     			style = element("style");
     			style.textContent = "@import url(\"https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;600;900&display=swaps\");\n\t\t/* @import url(\"components/swiper/swiper.scss\"); */\n)";
     			t1 = space();
-    			div1 = element("div");
-    			div0 = element("div");
-    			create_component(inlinesvg.$$.fragment);
-    			t2 = space();
     			main = element("main");
     			create_component(swiper.$$.fragment);
     			add_location(style, file, 1, 4, 18);
-    			attr_dev(div0, "class", "bgbubbles");
-    			add_location(div0, file, 67, 1, 1697);
-    			attr_dev(div1, "class", "intro");
-    			add_location(div1, file, 66, 0, 1675);
-    			attr_dev(main, "class", "svelte-1rhjl37");
-    			add_location(main, file, 72, 0, 1771);
+    			attr_dev(main, "class", "svelte-r6dqds");
+    			add_location(main, file, 65, 0, 1673);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -30212,10 +30214,6 @@ var app = (function () {
     		m: function mount(target, anchor) {
     			append_dev(document.head, style);
     			insert_dev(target, t1, anchor);
-    			insert_dev(target, div1, anchor);
-    			append_dev(div1, div0);
-    			mount_component(inlinesvg, div0, null);
-    			insert_dev(target, t2, anchor);
     			insert_dev(target, main, anchor);
     			mount_component(swiper, main, null);
     			current = true;
@@ -30231,21 +30229,16 @@ var app = (function () {
     		},
     		i: function intro(local) {
     			if (current) return;
-    			transition_in(inlinesvg.$$.fragment, local);
     			transition_in(swiper.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
-    			transition_out(inlinesvg.$$.fragment, local);
     			transition_out(swiper.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
     			detach_dev(style);
     			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(div1);
-    			destroy_component(inlinesvg);
-    			if (detaching) detach_dev(t2);
     			if (detaching) detach_dev(main);
     			destroy_component(swiper);
     		}
@@ -30267,8 +30260,8 @@ var app = (function () {
     const blue = "#769892";
     const ltgrey = "#8F8F8F";
     const dkgrey = "#414142";
-    const width = 1000;
-    const height = 800;
+    const width = 800;
+    const height = 600;
     const padding = 5;
     const introDesktop = "build/assets/bg-header-all.svg";
 

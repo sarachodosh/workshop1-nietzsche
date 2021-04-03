@@ -22,8 +22,8 @@
 	const ltgrey = '#8F8F8F'
 	const dkgrey = '#414142'
 
-	const width = 1000;
-	const height = 800;
+	const width = 800;
+	const height = 600;
 
 	const padding = 5;
 
@@ -63,19 +63,11 @@
 </script>
 
 
-
-<div class="intro">	
-	<div class="bgbubbles">
-		<InlineSVG src={introDesktop}/>
-	</div>
-</div>
-
 <main>
 	<Swiper
 	direction={'vertical'}
     spaceBetween={30}
     slidesPerView={1}
-	autoHeight={true}
 	mousewheel={true}
 	speed={1000}
     on:slideChange={() => console.log('slide change')}
@@ -83,7 +75,9 @@
   	>
  	
 	<SwiperSlide>
-		 <h1>Hello, I am section 1</h1>
+		<div class='full-width'>
+		<InlineSVG src={introDesktop}/>
+		</div>
 	</SwiperSlide>
 
     <SwiperSlide>
@@ -176,10 +170,6 @@
 		background-color: #222222;
 	}
 	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
 		color:white;
 	}
 
@@ -192,6 +182,9 @@
 		padding: 0 50px;
 	}
 
+	.full-width {
+		width: 100vw;
+	}
 
 	Swiper {
             width: 100%;
@@ -203,7 +196,6 @@
 	SwiperSlide {
             text-align: center;
             font-size: 18px;
-            background: #fff;
 
             /* Center slide text vertically */
             display: -webkit-box;
