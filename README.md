@@ -7,6 +7,7 @@
 - [Airtable Calendar](https://airtable.com/shr6YoJrHIhuSNfy7)
 - Github: This one! 
 - [Figma](https://www.figma.com/file/XAEL4J1Z6TfVnyARgltc8U/workshop-1-shop-nietz)
+- [Svelte app](https://github.com/sarachodosh/workshop1-nietzsche/tree/main/nietzsche-app)
 
 ### Timeline
 - Project kickoff: Sunday, March 7
