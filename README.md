@@ -3,10 +3,10 @@
 
 **Students**: Rebecca, Rocío, and Sara ; **Mentors**: Carlo and Karma ; **Expert**: Joaquin Campodonico
 
-- Slack channel: https://mvtecworkspace.slack.com/archives/C01N4MNP0E8
-- Airtable Calendar: https://airtable.com/shr6YoJrHIhuSNfy7 Gantt chart: https://airtable.com/shrZyDuLwLAi0svqL
+- [Slack channel](https://mvtecworkspace.slack.com/archives/C01N4MNP0E8)
+- [Airtable Calendar](https://airtable.com/shr6YoJrHIhuSNfy7)
 - Github: This one! 
-- Figma: https://www.figma.com/file/XAEL4J1Z6TfVnyARgltc8U/workshop-1-shop-nietz
+- [Figma](https://www.figma.com/file/XAEL4J1Z6TfVnyARgltc8U/workshop-1-shop-nietz)
 
 ### Timeline
 Project kickoff: Sunday, March 7
