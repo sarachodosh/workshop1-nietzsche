@@ -52,4 +52,4 @@ Team and contacts
 ### Hackathon winners
 Also, we won the hackathon for most progress made during. So, thanks!
 
-![Alt Text](https://media.giphy.com/media/mv7XeUdgS6yL6XcITA/giphy.gif)
+![Alt Text](https://media.giphy.com/media/l0NhXTZ7et5sf84gw/giphy.gif)
