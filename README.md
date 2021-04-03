@@ -1,6 +1,4 @@
-# Title: Into the mind of Friedrich Nietzsche
-workshop1-nietzsche
-
+# Workshop 1: Into the mind of Friedrich Nietzsche
 ![Alt Text](https://github.com/sarachodosh/workshop1-nietzsche/blob/main/nietzsche-app/public/build/assets/header1.gif?raw=true)
 
 **Students**: Rebecca, Rocío, and Sara ; **Mentors**: Carlo and Karma ; **Expert**: Joaquin Campodonico
