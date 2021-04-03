@@ -1,7 +1,7 @@
 # Working title: Into the mind of... Nietzsche
 workshop1-nietzsche
 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://github.com/sarachodosh/workshop1-nietzsche/blob/main/nietzsche-app/public/build/assets/header1.gif?raw=true)
 
 **Students**: Rebecca, Rocío, and Sara ; **Mentors**: Carlo and Karma ; **Expert**: Joaquin Campodonico
 
