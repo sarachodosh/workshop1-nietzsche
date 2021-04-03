@@ -13,8 +13,6 @@ Project kickoff: Sunday, March 7
 Static prototype: Friday, March 19
 Interactive prototype: Friday, March 26
 Hackathon: March 27 - 80% of the project ready + 7 hours to complete
-(Which we won, yay! 
-![Alt Text](https://media.giphy.com/media/mv7XeUdgS6yL6XcITA/giphy.gif)
 Deadline: Monday, April 5
 
 ### Final objectives
@@ -50,3 +48,7 @@ The most interesting was done in 2013 by the University of Milan and DensityDesi
 Another group used Wikipedia to find influences between philosophers and visualise this as a network graph (http://www.coppelia.io/wp-content/uploads/2015/08/philprettyv4.png). In this version, Nietzsche is shown as a large circle showing his heavy influence on other philosophers.
 Another one (https://s4n0i.github.io/schoolofathens/) looked at the same relationships of influence as a network graph but placed on a timeline which better shows the historical influences. Github repo here (https://github.com/S4N0I/theschoolofathens).
 Team and contacts
+
+### Hackathon winners
+Also, we won the hackathon for most progress made during. So, thanks!
+![Alt Text](https://media.giphy.com/media/mv7XeUdgS6yL6XcITA/giphy.gif)
