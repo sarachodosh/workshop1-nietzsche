@@ -9,11 +9,11 @@
 - [Figma](https://www.figma.com/file/XAEL4J1Z6TfVnyARgltc8U/workshop-1-shop-nietz)
 
 ### Timeline
-Project kickoff: Sunday, March 7
-Static prototype: Friday, March 19
-Interactive prototype: Friday, March 26
-Hackathon: March 27 - 80% of the project ready + 7 hours to complete
-Deadline: Monday, April 5
+- Project kickoff: Sunday, March 7
+- Static prototype: Friday, March 19
+- Interactive prototype: Friday, March 26
+- Hackathon: March 27 - 80% of the project ready + 7 hours to complete
+- Deadline: Monday, April 5
 
 ### Final objectives
 [X] Provide a search & display function to explore his Posthumous fragments
