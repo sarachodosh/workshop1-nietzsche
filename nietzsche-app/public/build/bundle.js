@@ -28566,8 +28566,8 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (77:1) <SwiperSlide>
-    function create_default_slot_4(ctx) {
+    // (82:1) <SwiperSlide>
+    function create_default_slot_6(ctx) {
     	let div;
     	let inlinesvg;
     	let current;
@@ -28581,8 +28581,104 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			create_component(inlinesvg.$$.fragment);
-    			attr_dev(div, "class", "full-width svelte-r6dqds");
-    			add_location(div, file, 77, 2, 1918);
+    			attr_dev(div, "class", "full-width svelte-rw5awm");
+    			add_location(div, file, 82, 2, 2138);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div, anchor);
+    			mount_component(inlinesvg, div, null);
+    			current = true;
+    		},
+    		p: noop$4,
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(inlinesvg.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(inlinesvg.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
+    			destroy_component(inlinesvg);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_6.name,
+    		type: "slot",
+    		source: "(82:1) <SwiperSlide>",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (88:4) <SwiperSlide>
+    function create_default_slot_5(ctx) {
+    	let div;
+    	let inlinesvg;
+    	let current;
+
+    	inlinesvg = new Inline_svg({
+    			props: { src: topicsSVG },
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			div = element("div");
+    			create_component(inlinesvg.$$.fragment);
+    			attr_dev(div, "class", "full-width svelte-rw5awm");
+    			add_location(div, file, 88, 2, 2243);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div, anchor);
+    			mount_component(inlinesvg, div, null);
+    			current = true;
+    		},
+    		p: noop$4,
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(inlinesvg.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(inlinesvg.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
+    			destroy_component(inlinesvg);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_5.name,
+    		type: "slot",
+    		source: "(88:4) <SwiperSlide>",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (94:1) <SwiperSlide>
+    function create_default_slot_4(ctx) {
+    	let div;
+    	let inlinesvg;
+    	let current;
+    	inlinesvg = new Inline_svg({ props: { src: wordsSVG }, $$inline: true });
+
+    	const block = {
+    		c: function create() {
+    			div = element("div");
+    			create_component(inlinesvg.$$.fragment);
+    			attr_dev(div, "class", "full-width svelte-rw5awm");
+    			add_location(div, file, 94, 2, 2342);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -28609,44 +28705,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4.name,
     		type: "slot",
-    		source: "(77:1) <SwiperSlide>",
+    		source: "(94:1) <SwiperSlide>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (83:4) <SwiperSlide>
-    function create_default_slot_3(ctx) {
-    	let h1;
-
-    	const block = {
-    		c: function create() {
-    			h1 = element("h1");
-    			h1.textContent = "Hello, I am section 2";
-    			attr_dev(h1, "class", "svelte-r6dqds");
-    			add_location(h1, file, 83, 2, 2023);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, h1, anchor);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(h1);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_3.name,
-    		type: "slot",
-    		source: "(83:4) <SwiperSlide>",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (90:3) {#if data}
+    // (106:4) {#if data}
     function create_if_block(ctx) {
     	let each_1_anchor;
     	let each_value = /*data*/ ctx[0];
@@ -28707,14 +28773,14 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(90:3) {#if data}",
+    		source: "(106:4) {#if data}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (95:4) {#each d.schop_matches.matched_positions as e}
+    // (111:5) {#each d.schop_matches.matched_positions as e}
     function create_each_block_13(ctx) {
     	let rect;
     	let rect_transform_value;
@@ -28726,7 +28792,7 @@ var app = (function () {
     			attr_dev(rect, "height", "1");
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", pink);
-    			add_location(rect, file, 95, 5, 2447);
+    			add_location(rect, file, 111, 6, 2863);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -28745,14 +28811,14 @@ var app = (function () {
     		block,
     		id: create_each_block_13.name,
     		type: "each",
-    		source: "(95:4) {#each d.schop_matches.matched_positions as e}",
+    		source: "(111:5) {#each d.schop_matches.matched_positions as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (99:4) {#each d.wagn_matches.matched_positions as e}
+    // (115:5) {#each d.wagn_matches.matched_positions as e}
     function create_each_block_12(ctx) {
     	let rect;
     	let rect_transform_value;
@@ -28764,7 +28830,7 @@ var app = (function () {
     			attr_dev(rect, "height", "1");
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", pink);
-    			add_location(rect, file, 99, 5, 2656);
+    			add_location(rect, file, 115, 6, 3076);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -28783,14 +28849,14 @@ var app = (function () {
     		block,
     		id: create_each_block_12.name,
     		type: "each",
-    		source: "(99:4) {#each d.wagn_matches.matched_positions as e}",
+    		source: "(115:5) {#each d.wagn_matches.matched_positions as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (103:4) {#each d.kant_matches.matched_positions as e}
+    // (119:5) {#each d.kant_matches.matched_positions as e}
     function create_each_block_11(ctx) {
     	let rect;
     	let rect_transform_value;
@@ -28802,7 +28868,7 @@ var app = (function () {
     			attr_dev(rect, "height", "1");
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", pink);
-    			add_location(rect, file, 103, 5, 2865);
+    			add_location(rect, file, 119, 6, 3289);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -28821,14 +28887,14 @@ var app = (function () {
     		block,
     		id: create_each_block_11.name,
     		type: "each",
-    		source: "(103:4) {#each d.kant_matches.matched_positions as e}",
+    		source: "(119:5) {#each d.kant_matches.matched_positions as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (109:4) {#each d.deutch_matches.matched_positions as e}
+    // (125:5) {#each d.deutch_matches.matched_positions as e}
     function create_each_block_10(ctx) {
     	let rect;
     	let rect_transform_value;
@@ -28840,7 +28906,7 @@ var app = (function () {
     			attr_dev(rect, "height", "1");
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", ltgrey);
-    			add_location(rect, file, 109, 5, 3099);
+    			add_location(rect, file, 125, 6, 3529);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -28859,14 +28925,14 @@ var app = (function () {
     		block,
     		id: create_each_block_10.name,
     		type: "each",
-    		source: "(109:4) {#each d.deutch_matches.matched_positions as e}",
+    		source: "(125:5) {#each d.deutch_matches.matched_positions as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (113:4) {#each d.musik_matches.matched_positions as e}
+    // (129:5) {#each d.musik_matches.matched_positions as e}
     function create_each_block_9(ctx) {
     	let rect;
     	let rect_transform_value;
@@ -28878,7 +28944,7 @@ var app = (function () {
     			attr_dev(rect, "height", "1");
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", ltgrey);
-    			add_location(rect, file, 113, 5, 3311);
+    			add_location(rect, file, 129, 6, 3745);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -28897,14 +28963,14 @@ var app = (function () {
     		block,
     		id: create_each_block_9.name,
     		type: "each",
-    		source: "(113:4) {#each d.musik_matches.matched_positions as e}",
+    		source: "(129:5) {#each d.musik_matches.matched_positions as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (119:4) {#each d.wille_matches.matched_positions as e}
+    // (135:5) {#each d.wille_matches.matched_positions as e}
     function create_each_block_8(ctx) {
     	let rect;
     	let rect_transform_value;
@@ -28916,7 +28982,7 @@ var app = (function () {
     			attr_dev(rect, "height", "1");
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", blue);
-    			add_location(rect, file, 119, 5, 3549);
+    			add_location(rect, file, 135, 6, 3989);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -28935,14 +29001,14 @@ var app = (function () {
     		block,
     		id: create_each_block_8.name,
     		type: "each",
-    		source: "(119:4) {#each d.wille_matches.matched_positions as e}",
+    		source: "(135:5) {#each d.wille_matches.matched_positions as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (123:4) {#each d.ding_matches.matched_positions as e}
+    // (139:5) {#each d.ding_matches.matched_positions as e}
     function create_each_block_7(ctx) {
     	let rect;
     	let rect_transform_value;
@@ -28954,7 +29020,7 @@ var app = (function () {
     			attr_dev(rect, "height", "1");
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", blue);
-    			add_location(rect, file, 123, 5, 3758);
+    			add_location(rect, file, 139, 6, 4202);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -28973,14 +29039,14 @@ var app = (function () {
     		block,
     		id: create_each_block_7.name,
     		type: "each",
-    		source: "(123:4) {#each d.ding_matches.matched_positions as e}",
+    		source: "(139:5) {#each d.ding_matches.matched_positions as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (127:4) {#each d.wahr_matches.matched_positions as e}
+    // (143:5) {#each d.wahr_matches.matched_positions as e}
     function create_each_block_6(ctx) {
     	let rect;
     	let rect_transform_value;
@@ -28992,7 +29058,7 @@ var app = (function () {
     			attr_dev(rect, "height", "1");
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", blue);
-    			add_location(rect, file, 127, 5, 3967);
+    			add_location(rect, file, 143, 6, 4415);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -29011,14 +29077,14 @@ var app = (function () {
     		block,
     		id: create_each_block_6.name,
     		type: "each",
-    		source: "(127:4) {#each d.wahr_matches.matched_positions as e}",
+    		source: "(143:5) {#each d.wahr_matches.matched_positions as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (131:4) {#each d.tragische_matches.matched_positions as e}
+    // (147:5) {#each d.tragische_matches.matched_positions as e}
     function create_each_block_5(ctx) {
     	let rect;
     	let rect_transform_value;
@@ -29030,7 +29096,7 @@ var app = (function () {
     			attr_dev(rect, "height", "1");
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", blue);
-    			add_location(rect, file, 131, 5, 4181);
+    			add_location(rect, file, 147, 6, 4633);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -29049,14 +29115,14 @@ var app = (function () {
     		block,
     		id: create_each_block_5.name,
     		type: "each",
-    		source: "(131:4) {#each d.tragische_matches.matched_positions as e}",
+    		source: "(147:5) {#each d.tragische_matches.matched_positions as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (135:4) {#each d.leiden_matches.matched_positions as e}
+    // (151:5) {#each d.leiden_matches.matched_positions as e}
     function create_each_block_4(ctx) {
     	let rect;
     	let rect_transform_value;
@@ -29068,7 +29134,7 @@ var app = (function () {
     			attr_dev(rect, "height", "1");
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", blue);
-    			add_location(rect, file, 135, 5, 4392);
+    			add_location(rect, file, 151, 6, 4848);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -29087,14 +29153,14 @@ var app = (function () {
     		block,
     		id: create_each_block_4.name,
     		type: "each",
-    		source: "(135:4) {#each d.leiden_matches.matched_positions as e}",
+    		source: "(151:5) {#each d.leiden_matches.matched_positions as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (141:4) {#each d.hindu_matches.matched_positions as e}
+    // (157:5) {#each d.hindu_matches.matched_positions as e}
     function create_each_block_3(ctx) {
     	let rect;
     	let rect_transform_value;
@@ -29106,7 +29172,7 @@ var app = (function () {
     			attr_dev(rect, "height", "1");
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", yellow);
-    			add_location(rect, file, 141, 5, 4626);
+    			add_location(rect, file, 157, 6, 5088);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -29125,14 +29191,14 @@ var app = (function () {
     		block,
     		id: create_each_block_3.name,
     		type: "each",
-    		source: "(141:4) {#each d.hindu_matches.matched_positions as e}",
+    		source: "(157:5) {#each d.hindu_matches.matched_positions as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (145:4) {#each d.budd_matches.matched_positions as e}
+    // (161:5) {#each d.budd_matches.matched_positions as e}
     function create_each_block_2(ctx) {
     	let rect;
     	let rect_transform_value;
@@ -29144,7 +29210,7 @@ var app = (function () {
     			attr_dev(rect, "height", "1");
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", yellow);
-    			add_location(rect, file, 145, 5, 4837);
+    			add_location(rect, file, 161, 6, 5303);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -29163,14 +29229,14 @@ var app = (function () {
     		block,
     		id: create_each_block_2.name,
     		type: "each",
-    		source: "(145:4) {#each d.budd_matches.matched_positions as e}",
+    		source: "(161:5) {#each d.budd_matches.matched_positions as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (149:4) {#each d.schleier_matches.matched_positions as e}
+    // (165:5) {#each d.schleier_matches.matched_positions as e}
     function create_each_block_1(ctx) {
     	let rect;
     	let rect_transform_value;
@@ -29182,7 +29248,7 @@ var app = (function () {
     			attr_dev(rect, "height", "1");
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", yellow);
-    			add_location(rect, file, 149, 5, 5052);
+    			add_location(rect, file, 165, 6, 5522);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -29201,14 +29267,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(149:4) {#each d.schleier_matches.matched_positions as e}",
+    		source: "(165:5) {#each d.schleier_matches.matched_positions as e}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (91:3) {#each data as d}
+    // (107:4) {#each data as d}
     function create_each_block(ctx) {
     	let rect;
     	let rect_height_value;
@@ -29415,7 +29481,7 @@ var app = (function () {
     			attr_dev(rect, "height", rect_height_value = /*heightScale*/ ctx[1](/*d*/ ctx[9].total_length));
     			attr_dev(rect, "fill", dkgrey);
     			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2] + ")");
-    			add_location(rect, file, 91, 4, 2218);
+    			add_location(rect, file, 107, 5, 2630);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -29854,37 +29920,52 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(91:3) {#each data as d}",
+    		source: "(107:4) {#each data as d}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (87:4) <SwiperSlide>
-    function create_default_slot_2(ctx) {
-    	let h1;
-    	let t1;
+    // (100:4) <SwiperSlide>
+    function create_default_slot_3(ctx) {
+    	let div0;
+    	let inlinesvg;
+    	let t;
+    	let div1;
     	let svg;
+    	let current;
+
+    	inlinesvg = new Inline_svg({
+    			props: { src: fragmentExplorer },
+    			$$inline: true
+    		});
+
     	let if_block = /*data*/ ctx[0] && create_if_block(ctx);
 
     	const block = {
     		c: function create() {
-    			h1 = element("h1");
-    			h1.textContent = "I am section 3 and I have the D3 box";
-    			t1 = space();
+    			div0 = element("div");
+    			create_component(inlinesvg.$$.fragment);
+    			t = space();
+    			div1 = element("div");
     			svg = svg_element("svg");
     			if (if_block) if_block.c();
-    			attr_dev(h1, "class", "svelte-r6dqds");
-    			add_location(h1, file, 87, 2, 2091);
+    			attr_dev(div0, "class", "full-width svelte-rw5awm");
+    			add_location(div0, file, 100, 2, 2443);
     			attr_dev(svg, "viewBox", "0 0 " + width + " " + height);
-    			add_location(svg, file, 88, 2, 2139);
+    			add_location(svg, file, 104, 3, 2548);
+    			attr_dev(div1, "class", "fragments-d3 svelte-rw5awm");
+    			add_location(div1, file, 103, 2, 2518);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, h1, anchor);
-    			insert_dev(target, t1, anchor);
-    			insert_dev(target, svg, anchor);
+    			insert_dev(target, div0, anchor);
+    			mount_component(inlinesvg, div0, null);
+    			insert_dev(target, t, anchor);
+    			insert_dev(target, div1, anchor);
+    			append_dev(div1, svg);
     			if (if_block) if_block.m(svg, null);
+    			current = true;
     		},
     		p: function update(ctx, dirty) {
     			if (/*data*/ ctx[0]) {
@@ -29900,11 +29981,71 @@ var app = (function () {
     				if_block = null;
     			}
     		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(inlinesvg.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(inlinesvg.$$.fragment, local);
+    			current = false;
+    		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(h1);
-    			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(svg);
+    			if (detaching) detach_dev(div0);
+    			destroy_component(inlinesvg);
+    			if (detaching) detach_dev(t);
+    			if (detaching) detach_dev(div1);
     			if (if_block) if_block.d();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_3.name,
+    		type: "slot",
+    		source: "(100:4) <SwiperSlide>",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (175:4) <SwiperSlide>
+    function create_default_slot_2(ctx) {
+    	let div;
+    	let inlinesvg;
+    	let current;
+
+    	inlinesvg = new Inline_svg({
+    			props: { src: experimental },
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			div = element("div");
+    			create_component(inlinesvg.$$.fragment);
+    			attr_dev(div, "class", "full-width svelte-rw5awm");
+    			add_location(div, file, 175, 2, 5758);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div, anchor);
+    			mount_component(inlinesvg, div, null);
+    			current = true;
+    		},
+    		p: noop$4,
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(inlinesvg.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(inlinesvg.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
+    			destroy_component(inlinesvg);
     		}
     	};
 
@@ -29912,29 +30053,198 @@ var app = (function () {
     		block,
     		id: create_default_slot_2.name,
     		type: "slot",
-    		source: "(87:4) <SwiperSlide>",
+    		source: "(175:4) <SwiperSlide>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (158:4) <SwiperSlide>
+    // (181:1) <SwiperSlide>
     function create_default_slot_1(ctx) {
-    	let h1;
+    	let div;
+    	let h2;
+    	let t1;
+    	let p0;
+    	let t3;
+    	let p1;
+    	let t5;
+    	let p2;
+    	let t6;
+    	let a0;
+    	let t8;
+    	let a1;
+    	let t10;
+    	let t11;
+    	let p3;
+    	let t13;
+    	let ul;
+    	let li0;
+    	let t14;
+    	let strong0;
+    	let t16;
+    	let t17;
+    	let li1;
+    	let t18;
+    	let strong1;
+    	let t20;
+    	let t21;
+    	let li2;
+    	let t22;
+    	let strong2;
+    	let t24;
+    	let t25;
+    	let li3;
+    	let t26;
+    	let strong3;
+    	let t28;
+    	let t29;
+    	let p4;
+    	let t30;
+    	let a2;
+    	let t32;
 
     	const block = {
     		c: function create() {
-    			h1 = element("h1");
-    			h1.textContent = "Slide 4";
-    			attr_dev(h1, "class", "svelte-r6dqds");
-    			add_location(h1, file, 158, 2, 5274);
+    			div = element("div");
+    			h2 = element("h2");
+    			h2.textContent = "What is this?";
+    			t1 = space();
+    			p0 = element("p");
+    			p0.textContent = "This is a prototype created by students, Rocío Márquez Salguero, Sara Chodosh and Rebecca Pazos during the first workshop for their Masters for Visual Tools with the University of Girona.";
+    			t3 = space();
+    			p1 = element("p");
+    			p1.textContent = "They were assisted by mentors Karma Peiro and Carlo Zapponi as well as an expert on Nietzsche, Joaquin Campodonico.";
+    			t5 = space();
+    			p2 = element("p");
+    			t6 = text$2("The first static prototype was created in ");
+    			a0 = element("a");
+    			a0.textContent = "Figma";
+    			t8 = text$2(", code is hosted on ");
+    			a1 = element("a");
+    			a1.textContent = "Github";
+    			t10 = text$2(" and what you are now seeing are the final efforts of an interactive prototype using D3 and some static SVGs.");
+    			t11 = space();
+    			p3 = element("p");
+    			p3.textContent = "Our goal for the workshop was to:";
+    			t13 = space();
+    			ul = element("ul");
+    			li0 = element("li");
+    			t14 = text$2("Provide a ");
+    			strong0 = element("strong");
+    			strong0.textContent = "search & display";
+    			t16 = text$2(" function to explore his Posthumous fragments, realised in the third secion called \"Fragments Explorer\"");
+    			t17 = space();
+    			li1 = element("li");
+    			t18 = text$2("Use keywords curated by Nietzsche expert to show ");
+    			strong1 = element("strong");
+    			strong1.textContent = "changing patterns";
+    			t20 = text$2(" in Nietzsche's fragments, realised in the first two sections.");
+    			t21 = space();
+    			li2 = element("li");
+    			t22 = text$2("Provide a voting function to ");
+    			strong2 = element("strong");
+    			strong2.textContent = "crowdsource sentiment analysis";
+    			t24 = text$2(", realised in the third secion Please see prototype for more.");
+    			t25 = space();
+    			li3 = element("li");
+    			t26 = text$2("An additional search field for users to input their own terms for ");
+    			strong3 = element("strong");
+    			strong3.textContent = "exploration";
+    			t28 = text$2(", realised in the fourth section.");
+    			t29 = space();
+    			p4 = element("p");
+    			t30 = text$2("If you would like to know more, please feel free to contact Rebecca Pazos on ");
+    			a2 = element("a");
+    			a2.textContent = "LinkedIn";
+    			t32 = text$2(".");
+    			attr_dev(h2, "class", "svelte-rw5awm");
+    			add_location(h2, file, 182, 2, 5887);
+    			attr_dev(p0, "class", "svelte-rw5awm");
+    			add_location(p0, file, 183, 2, 5912);
+    			attr_dev(p1, "class", "svelte-rw5awm");
+    			add_location(p1, file, 184, 2, 6109);
+    			attr_dev(a0, "href", "https://www.figma.com/file/XAEL4J1Z6TfVnyARgltc8U/workshop-1-shop-nietz?node-id=111%3A0");
+    			attr_dev(a0, "class", "svelte-rw5awm");
+    			add_location(a0, file, 185, 47, 6279);
+    			attr_dev(a1, "href", "https://github.com/sarachodosh/workshop1-nietzsche");
+    			attr_dev(a1, "class", "svelte-rw5awm");
+    			add_location(a1, file, 185, 174, 6406);
+    			attr_dev(p2, "class", "svelte-rw5awm");
+    			add_location(p2, file, 185, 2, 6234);
+    			attr_dev(p3, "class", "svelte-rw5awm");
+    			add_location(p3, file, 186, 2, 6593);
+    			attr_dev(strong0, "class", "svelte-rw5awm");
+    			add_location(strong0, file, 188, 17, 6658);
+    			attr_dev(li0, "class", "svelte-rw5awm");
+    			add_location(li0, file, 188, 3, 6644);
+    			attr_dev(strong1, "class", "svelte-rw5awm");
+    			add_location(strong1, file, 189, 56, 6856);
+    			attr_dev(li1, "class", "svelte-rw5awm");
+    			add_location(li1, file, 189, 3, 6803);
+    			attr_dev(strong2, "class", "svelte-rw5awm");
+    			add_location(strong2, file, 190, 36, 6994);
+    			attr_dev(li2, "class", "svelte-rw5awm");
+    			add_location(li2, file, 190, 3, 6961);
+    			attr_dev(strong3, "class", "svelte-rw5awm");
+    			add_location(strong3, file, 191, 73, 7181);
+    			attr_dev(li3, "class", "svelte-rw5awm");
+    			add_location(li3, file, 191, 3, 7111);
+    			attr_dev(ul, "class", "svelte-rw5awm");
+    			add_location(ul, file, 187, 2, 6636);
+    			attr_dev(a2, "href", "https://www.linkedin.com/in/rebeccapazos/");
+    			attr_dev(a2, "class", "svelte-rw5awm");
+    			add_location(a2, file, 193, 82, 7338);
+    			attr_dev(p4, "class", "svelte-rw5awm");
+    			add_location(p4, file, 193, 2, 7258);
+    			attr_dev(div, "class", "textSwipe svelte-rw5awm");
+    			add_location(div, file, 181, 2, 5861);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, h1, anchor);
+    			insert_dev(target, div, anchor);
+    			append_dev(div, h2);
+    			append_dev(div, t1);
+    			append_dev(div, p0);
+    			append_dev(div, t3);
+    			append_dev(div, p1);
+    			append_dev(div, t5);
+    			append_dev(div, p2);
+    			append_dev(p2, t6);
+    			append_dev(p2, a0);
+    			append_dev(p2, t8);
+    			append_dev(p2, a1);
+    			append_dev(p2, t10);
+    			append_dev(div, t11);
+    			append_dev(div, p3);
+    			append_dev(div, t13);
+    			append_dev(div, ul);
+    			append_dev(ul, li0);
+    			append_dev(li0, t14);
+    			append_dev(li0, strong0);
+    			append_dev(li0, t16);
+    			append_dev(ul, t17);
+    			append_dev(ul, li1);
+    			append_dev(li1, t18);
+    			append_dev(li1, strong1);
+    			append_dev(li1, t20);
+    			append_dev(ul, t21);
+    			append_dev(ul, li2);
+    			append_dev(li2, t22);
+    			append_dev(li2, strong2);
+    			append_dev(li2, t24);
+    			append_dev(ul, t25);
+    			append_dev(ul, li3);
+    			append_dev(li3, t26);
+    			append_dev(li3, strong3);
+    			append_dev(li3, t28);
+    			append_dev(div, t29);
+    			append_dev(div, p4);
+    			append_dev(p4, t30);
+    			append_dev(p4, a2);
+    			append_dev(p4, t32);
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(h1);
+    			if (detaching) detach_dev(div);
     		}
     	};
 
@@ -29942,14 +30252,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(158:4) <SwiperSlide>",
+    		source: "(181:1) <SwiperSlide>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (67:1) <Swiper  direction={'vertical'}     spaceBetween={30}     slidesPerView={1}  mousewheel={true}  speed={1000}     on:slideChange={() => console.log('slide change')}     on:swiper={(e) => console.log(e.detail[0])}    >
+    // (71:1) <Swiper  direction={'vertical'}     spaceBetween={30}     slidesPerView={1}  mousewheel={true}  speed={1000}  autoHeight={true}     on:slideChange={() => console.log('slide change')}     on:swiper={(e) => console.log(e.detail[0])}    >
     function create_default_slot(ctx) {
     	let swiperslide0;
     	let t0;
@@ -29958,11 +30268,15 @@ var app = (function () {
     	let swiperslide2;
     	let t2;
     	let swiperslide3;
+    	let t3;
+    	let swiperslide4;
+    	let t4;
+    	let swiperslide5;
     	let current;
 
     	swiperslide0 = new Swiper({
     			props: {
-    				$$slots: { default: [create_default_slot_4] },
+    				$$slots: { default: [create_default_slot_6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -29970,7 +30284,7 @@ var app = (function () {
 
     	swiperslide1 = new Swiper({
     			props: {
-    				$$slots: { default: [create_default_slot_3] },
+    				$$slots: { default: [create_default_slot_5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -29978,13 +30292,29 @@ var app = (function () {
 
     	swiperslide2 = new Swiper({
     			props: {
-    				$$slots: { default: [create_default_slot_2] },
+    				$$slots: { default: [create_default_slot_4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
     		});
 
     	swiperslide3 = new Swiper({
+    			props: {
+    				$$slots: { default: [create_default_slot_3] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	swiperslide4 = new Swiper({
+    			props: {
+    				$$slots: { default: [create_default_slot_2] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	swiperslide5 = new Swiper({
     			props: {
     				$$slots: { default: [create_default_slot_1] },
     				$$scope: { ctx }
@@ -30001,6 +30331,10 @@ var app = (function () {
     			create_component(swiperslide2.$$.fragment);
     			t2 = space();
     			create_component(swiperslide3.$$.fragment);
+    			t3 = space();
+    			create_component(swiperslide4.$$.fragment);
+    			t4 = space();
+    			create_component(swiperslide5.$$.fragment);
     		},
     		m: function mount(target, anchor) {
     			mount_component(swiperslide0, target, anchor);
@@ -30010,6 +30344,10 @@ var app = (function () {
     			mount_component(swiperslide2, target, anchor);
     			insert_dev(target, t2, anchor);
     			mount_component(swiperslide3, target, anchor);
+    			insert_dev(target, t3, anchor);
+    			mount_component(swiperslide4, target, anchor);
+    			insert_dev(target, t4, anchor);
+    			mount_component(swiperslide5, target, anchor);
     			current = true;
     		},
     		p: function update(ctx, dirty) {
@@ -30029,18 +30367,32 @@ var app = (function () {
     			swiperslide1.$set(swiperslide1_changes);
     			const swiperslide2_changes = {};
 
-    			if (dirty[0] & /*data*/ 1 | dirty[1] & /*$$scope*/ 256) {
+    			if (dirty[1] & /*$$scope*/ 256) {
     				swiperslide2_changes.$$scope = { dirty, ctx };
     			}
 
     			swiperslide2.$set(swiperslide2_changes);
     			const swiperslide3_changes = {};
 
-    			if (dirty[1] & /*$$scope*/ 256) {
+    			if (dirty[0] & /*data*/ 1 | dirty[1] & /*$$scope*/ 256) {
     				swiperslide3_changes.$$scope = { dirty, ctx };
     			}
 
     			swiperslide3.$set(swiperslide3_changes);
+    			const swiperslide4_changes = {};
+
+    			if (dirty[1] & /*$$scope*/ 256) {
+    				swiperslide4_changes.$$scope = { dirty, ctx };
+    			}
+
+    			swiperslide4.$set(swiperslide4_changes);
+    			const swiperslide5_changes = {};
+
+    			if (dirty[1] & /*$$scope*/ 256) {
+    				swiperslide5_changes.$$scope = { dirty, ctx };
+    			}
+
+    			swiperslide5.$set(swiperslide5_changes);
     		},
     		i: function intro(local) {
     			if (current) return;
@@ -30048,6 +30400,8 @@ var app = (function () {
     			transition_in(swiperslide1.$$.fragment, local);
     			transition_in(swiperslide2.$$.fragment, local);
     			transition_in(swiperslide3.$$.fragment, local);
+    			transition_in(swiperslide4.$$.fragment, local);
+    			transition_in(swiperslide5.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
@@ -30055,6 +30409,8 @@ var app = (function () {
     			transition_out(swiperslide1.$$.fragment, local);
     			transition_out(swiperslide2.$$.fragment, local);
     			transition_out(swiperslide3.$$.fragment, local);
+    			transition_out(swiperslide4.$$.fragment, local);
+    			transition_out(swiperslide5.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
@@ -30065,6 +30421,10 @@ var app = (function () {
     			destroy_component(swiperslide2, detaching);
     			if (detaching) detach_dev(t2);
     			destroy_component(swiperslide3, detaching);
+    			if (detaching) detach_dev(t3);
+    			destroy_component(swiperslide4, detaching);
+    			if (detaching) detach_dev(t4);
+    			destroy_component(swiperslide5, detaching);
     		}
     	};
 
@@ -30072,14 +30432,14 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(67:1) <Swiper  direction={'vertical'}     spaceBetween={30}     slidesPerView={1}  mousewheel={true}  speed={1000}     on:slideChange={() => console.log('slide change')}     on:swiper={(e) => console.log(e.detail[0])}    >",
+    		source: "(71:1) <Swiper  direction={'vertical'}     spaceBetween={30}     slidesPerView={1}  mousewheel={true}  speed={1000}  autoHeight={true}     on:slideChange={() => console.log('slide change')}     on:swiper={(e) => console.log(e.detail[0])}    >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (161:1) 
+    // (197:1) 
     function create_pagination_slot(ctx) {
     	let div;
 
@@ -30088,7 +30448,7 @@ var app = (function () {
     			div = element("div");
     			attr_dev(div, "class", "swiper-pagination");
     			attr_dev(div, "slot", "pagination");
-    			add_location(div, file, 160, 1, 5308);
+    			add_location(div, file, 196, 1, 7434);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -30102,14 +30462,14 @@ var app = (function () {
     		block,
     		id: create_pagination_slot.name,
     		type: "slot",
-    		source: "(161:1) ",
+    		source: "(197:1) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (162:2) 
+    // (198:2) 
     function create_button_next_slot(ctx) {
     	let div;
 
@@ -30118,7 +30478,7 @@ var app = (function () {
     			div = element("div");
     			attr_dev(div, "class", "swiper-button-next");
     			attr_dev(div, "slot", "button-next");
-    			add_location(div, file, 161, 2, 5366);
+    			add_location(div, file, 197, 2, 7492);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -30132,14 +30492,14 @@ var app = (function () {
     		block,
     		id: create_button_next_slot.name,
     		type: "slot",
-    		source: "(162:2) ",
+    		source: "(198:2) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (163:3) 
+    // (199:3) 
     function create_button_prev_slot(ctx) {
     	let div;
 
@@ -30148,7 +30508,7 @@ var app = (function () {
     			div = element("div");
     			attr_dev(div, "class", "swiper-button-prev");
     			attr_dev(div, "slot", "button-prev");
-    			add_location(div, file, 162, 3, 5427);
+    			add_location(div, file, 198, 3, 7553);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -30162,7 +30522,7 @@ var app = (function () {
     		block,
     		id: create_button_prev_slot.name,
     		type: "slot",
-    		source: "(163:3) ",
+    		source: "(199:3) ",
     		ctx
     	});
 
@@ -30183,6 +30543,7 @@ var app = (function () {
     				slidesPerView: 1,
     				mousewheel: true,
     				speed: 1000,
+    				autoHeight: true,
     				$$slots: {
     					"button-prev": [create_button_prev_slot],
     					"button-next": [create_button_next_slot],
@@ -30205,8 +30566,8 @@ var app = (function () {
     			main = element("main");
     			create_component(swiper.$$.fragment);
     			add_location(style, file, 1, 4, 18);
-    			attr_dev(main, "class", "svelte-r6dqds");
-    			add_location(main, file, 65, 0, 1673);
+    			attr_dev(main, "class", "svelte-rw5awm");
+    			add_location(main, file, 69, 0, 1874);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -30264,6 +30625,10 @@ var app = (function () {
     const height = 600;
     const padding = 5;
     const introDesktop = "build/assets/bg-header-all.svg";
+    const topicsSVG = "build/assets/topics.svg";
+    const wordsSVG = "build/assets/words.svg";
+    const fragmentExplorer = "build/assets/fragmentExplorer.svg";
+    const experimental = "build/assets/experimental.svg";
 
     function instance($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
@@ -30326,6 +30691,10 @@ var app = (function () {
     		barWidth,
     		InlineSVG: Inline_svg,
     		introDesktop,
+    		topicsSVG,
+    		wordsSVG,
+    		fragmentExplorer,
+    		experimental,
     		Swiper: Swiper$1,
     		SwiperSlide: Swiper,
     		SwiperCore: Swiper$2,
