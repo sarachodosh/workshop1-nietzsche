@@ -1,15 +1,29 @@
-# Working title: Into the mind of... Nietzsche
+# Title: Into the mind of Friedrich Nietzsche
 workshop1-nietzsche
 
 ![Alt Text](https://github.com/sarachodosh/workshop1-nietzsche/blob/main/nietzsche-app/public/build/assets/header1.gif?raw=true)
 
 **Students**: Rebecca, Rocío, and Sara ; **Mentors**: Carlo and Karma ; **Expert**: Joaquin Campodonico
 
-### Current summary (TBC)
-- Provide a search & display function to explore his Posthumous fragments
-- Selected topics grouped by four or five main themes that focus on his swaying attitudes from his youth (before c. 1878) and in his more mature years, selected in collaboration with our Nietzsche expert.
-- Provide a voting function to determine whether the selected paragraph was positive or negatively with regards to its subject in order to collectively crowdsource and spark philosophical conversation. Our expert will also provide a few sentences of analysis. Possible links to further exploration or maybe related terms from the opposing thoughts on the same subject?
-- Furthermore, an additional search field for users to input their own terms for exploration.
+Slack channel: https://mvtecworkspace.slack.com/archives/C01N4MNP0E8
+Airtable Calendar: https://airtable.com/shr6YoJrHIhuSNfy7 Gantt chart: https://airtable.com/shrZyDuLwLAi0svqL
+Github: This one! 
+Figma: https://www.figma.com/file/XAEL4J1Z6TfVnyARgltc8U/workshop-1-shop-nietz
+
+### Timeline
+Project kickoff: Sunday, March 7
+Static prototype: Friday, March 19
+Interactive prototype: Friday, March 26
+Hackathon: March 27 - 80% of the project ready + 7 hours to complete
+(Which we won, yay! 
+![Alt Text](https://media.giphy.com/media/mv7XeUdgS6yL6XcITA/giphy.gif)
+Deadline: Monday, April 5
+
+### Final objectives
+[X] Provide a search & display function to explore his Posthumous fragments
+[X] Selected topics grouped by four or five main themes that focus on his swaying attitudes from his youth (before c. 1878) and in his more mature years, selected in collaboration with our Nietzsche expert.
+[X] Provide a voting function to determine whether the selected paragraph was positive or negatively with regards to its subject in order to collectively crowdsource and spark philosophical conversation. Our expert will also provide a few sentences of analysis. Possible links to further exploration or maybe related terms from the opposing thoughts on the same subject?
+[X] Furthermore, an additional search field for users to input their own terms for exploration.
 
 ### Themes and keywords
 Link to [CSV](https://github.com/sarachodosh/workshop1-nietzsche/blob/main/themes.csv)
@@ -24,10 +38,9 @@ We think there is great potential in parsing philosophical texts into a visual f
 Anyone who would benefit from this alternative way of visually parsing philosophical texts, i.e., researchers, students, general population.
 
 ### Goals
-Build a scraper to pull all the Posthumous Fragments from this website.
-Find an appropriate sentiment analysis model to train with the scraped data. Ensure all ethical considerations are applied.
-Visualise the data in a format that is first narrative, and second exploratory.
-
+[X]Build a scraper to pull all the Posthumous Fragments from this website.
+[] Find an appropriate sentiment analysis model to train with the scraped data. Ensure all ethical considerations are applied.
+[X]Visualise the data in a format that is first narrative, and second exploratory.
 
 ### About the data
 The data is taken from Nietzsche Source (http://www.nietzschesource.org/#eKGWB/NF-1869,1). More details about the particular edition we are using can be found here.
@@ -39,15 +52,3 @@ The most interesting was done in 2013 by the University of Milan and DensityDesi
 Another group used Wikipedia to find influences between philosophers and visualise this as a network graph (http://www.coppelia.io/wp-content/uploads/2015/08/philprettyv4.png). In this version, Nietzsche is shown as a large circle showing his heavy influence on other philosophers.
 Another one (https://s4n0i.github.io/schoolofathens/) looked at the same relationships of influence as a network graph but placed on a timeline which better shows the historical influences. Github repo here (https://github.com/S4N0I/theschoolofathens).
 Team and contacts
-From MVTEC
-Students: Rebecca, Rocío, and Sara 
-Mentors: Carlo and Karma
-Slack channel: https://mvtecworkspace.slack.com/archives/C01N4MNP0E8
-Airtable Calendar: https://airtable.com/shr6YoJrHIhuSNfy7 Gantt chart: https://airtable.com/shrZyDuLwLAi0svqL
-Github: 
-Timeline
-Project kickoff: Sunday, March 7
-Static prototype: Friday, March 19
-Interactive prototype: Friday, March 26
-Hackathon: March 27 - 80% of the project ready + 7 hours to complete
-Deadline: Wed, March 31
