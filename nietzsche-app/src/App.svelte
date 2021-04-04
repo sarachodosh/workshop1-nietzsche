@@ -23,7 +23,7 @@
 	const dkgrey = '#333'
 
 	const width = 1200;
-	const height = 900;
+	const height = 550;
 
 	
 
@@ -38,7 +38,7 @@
 	
 	// RECT HEIGHT AND WIDTH			
 	const maxHeight = heightScale(d3.max(data, d => d.total_length));
-	const barWidth = 23 //widthScale.bandwidth();
+	const barWidth = 30 //widthScale.bandwidth();
 	const padding = 10;
 	
 	// SVG Import
@@ -254,7 +254,7 @@
 	}
 
 	.fragments-d3 {
-		width: 1000px;
+		width: 1200px;
 		position: fixed;
 		margin: -20vh 0 0 20vw;
 	}

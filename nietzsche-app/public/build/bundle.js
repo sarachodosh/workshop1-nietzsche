@@ -28581,7 +28581,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			create_component(inlinesvg.$$.fragment);
-    			attr_dev(div, "class", "full-width svelte-xcxob2");
+    			attr_dev(div, "class", "full-width svelte-8ivklw");
     			add_location(div, file, 82, 2, 2110);
     		},
     		m: function mount(target, anchor) {
@@ -28631,7 +28631,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			create_component(inlinesvg.$$.fragment);
-    			attr_dev(div, "class", "full-width svelte-xcxob2");
+    			attr_dev(div, "class", "full-width svelte-8ivklw");
     			add_location(div, file, 88, 2, 2215);
     		},
     		m: function mount(target, anchor) {
@@ -28677,7 +28677,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			create_component(inlinesvg.$$.fragment);
-    			attr_dev(div, "class", "full-width svelte-xcxob2");
+    			attr_dev(div, "class", "full-width svelte-8ivklw");
     			add_location(div, file, 94, 2, 2314);
     		},
     		m: function mount(target, anchor) {
@@ -29951,11 +29951,11 @@ var app = (function () {
     			div1 = element("div");
     			svg = svg_element("svg");
     			if (if_block) if_block.c();
-    			attr_dev(div0, "class", "full-width svelte-xcxob2");
+    			attr_dev(div0, "class", "full-width svelte-8ivklw");
     			add_location(div0, file, 100, 2, 2415);
     			attr_dev(svg, "viewBox", "0 0 " + width + " " + height);
     			add_location(svg, file, 104, 3, 2520);
-    			attr_dev(div1, "class", "fragments-d3 svelte-xcxob2");
+    			attr_dev(div1, "class", "fragments-d3 svelte-8ivklw");
     			add_location(div1, file, 103, 2, 2490);
     		},
     		m: function mount(target, anchor) {
@@ -30025,7 +30025,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			create_component(inlinesvg.$$.fragment);
-    			attr_dev(div, "class", "full-width svelte-xcxob2");
+    			attr_dev(div, "class", "full-width svelte-8ivklw");
     			add_location(div, file, 175, 2, 5756);
     		},
     		m: function mount(target, anchor) {
@@ -30158,46 +30158,46 @@ var app = (function () {
     			a2 = element("a");
     			a2.textContent = "LinkedIn";
     			t32 = text$2(".");
-    			attr_dev(h2, "class", "svelte-xcxob2");
+    			attr_dev(h2, "class", "svelte-8ivklw");
     			add_location(h2, file, 182, 2, 5885);
-    			attr_dev(p0, "class", "svelte-xcxob2");
+    			attr_dev(p0, "class", "svelte-8ivklw");
     			add_location(p0, file, 183, 2, 5910);
-    			attr_dev(p1, "class", "svelte-xcxob2");
+    			attr_dev(p1, "class", "svelte-8ivklw");
     			add_location(p1, file, 184, 2, 6108);
     			attr_dev(a0, "href", "https://www.figma.com/file/XAEL4J1Z6TfVnyARgltc8U/workshop-0.5-shop-nietz?node-id=111%3A0");
-    			attr_dev(a0, "class", "svelte-xcxob2");
+    			attr_dev(a0, "class", "svelte-8ivklw");
     			add_location(a0, file, 185, 47, 6278);
     			attr_dev(a1, "href", "https://github.com/sarachodosh/workshop1-nietzsche");
-    			attr_dev(a1, "class", "svelte-xcxob2");
+    			attr_dev(a1, "class", "svelte-8ivklw");
     			add_location(a1, file, 185, 176, 6407);
-    			attr_dev(p2, "class", "svelte-xcxob2");
+    			attr_dev(p2, "class", "svelte-8ivklw");
     			add_location(p2, file, 185, 2, 6233);
-    			attr_dev(p3, "class", "svelte-xcxob2");
+    			attr_dev(p3, "class", "svelte-8ivklw");
     			add_location(p3, file, 186, 2, 6594);
-    			attr_dev(strong0, "class", "svelte-xcxob2");
+    			attr_dev(strong0, "class", "svelte-8ivklw");
     			add_location(strong0, file, 188, 17, 6659);
-    			attr_dev(li0, "class", "svelte-xcxob2");
+    			attr_dev(li0, "class", "svelte-8ivklw");
     			add_location(li0, file, 188, 3, 6645);
-    			attr_dev(strong1, "class", "svelte-xcxob2");
+    			attr_dev(strong1, "class", "svelte-8ivklw");
     			add_location(strong1, file, 189, 56, 6857);
-    			attr_dev(li1, "class", "svelte-xcxob2");
+    			attr_dev(li1, "class", "svelte-8ivklw");
     			add_location(li1, file, 189, 3, 6804);
-    			attr_dev(strong2, "class", "svelte-xcxob2");
+    			attr_dev(strong2, "class", "svelte-8ivklw");
     			add_location(strong2, file, 190, 36, 6995);
-    			attr_dev(li2, "class", "svelte-xcxob2");
+    			attr_dev(li2, "class", "svelte-8ivklw");
     			add_location(li2, file, 190, 3, 6962);
-    			attr_dev(strong3, "class", "svelte-xcxob2");
+    			attr_dev(strong3, "class", "svelte-8ivklw");
     			add_location(strong3, file, 191, 73, 7182);
-    			attr_dev(li3, "class", "svelte-xcxob2");
+    			attr_dev(li3, "class", "svelte-8ivklw");
     			add_location(li3, file, 191, 3, 7112);
-    			attr_dev(ul, "class", "svelte-xcxob2");
+    			attr_dev(ul, "class", "svelte-8ivklw");
     			add_location(ul, file, 187, 2, 6637);
     			attr_dev(a2, "href", "https://www.linkedin.com/in/rebeccapazos/");
-    			attr_dev(a2, "class", "svelte-xcxob2");
+    			attr_dev(a2, "class", "svelte-8ivklw");
     			add_location(a2, file, 193, 82, 7339);
-    			attr_dev(p4, "class", "svelte-xcxob2");
+    			attr_dev(p4, "class", "svelte-8ivklw");
     			add_location(p4, file, 193, 2, 7259);
-    			attr_dev(div, "class", "textSwipe svelte-xcxob2");
+    			attr_dev(div, "class", "textSwipe svelte-8ivklw");
     			add_location(div, file, 181, 2, 5859);
     		},
     		m: function mount(target, anchor) {
@@ -30566,7 +30566,7 @@ var app = (function () {
     			main = element("main");
     			create_component(swiper.$$.fragment);
     			add_location(style, file, 1, 4, 18);
-    			attr_dev(main, "class", "svelte-xcxob2");
+    			attr_dev(main, "class", "svelte-8ivklw");
     			add_location(main, file, 69, 0, 1844);
     		},
     		l: function claim(nodes) {
@@ -30622,8 +30622,8 @@ var app = (function () {
     const ltgrey = "#8F8F8F";
     const dkgrey = "#333";
     const width = 1200;
-    const height = 900;
-    const barWidth = 23; //widthScale.bandwidth();
+    const height = 550;
+    const barWidth = 30; //widthScale.bandwidth();
     const padding = 10;
     const introDesktop = "build/assets/bg-header-all.svg";
     const topicsSVG = "build/assets/topics.svg";
