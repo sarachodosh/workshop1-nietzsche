@@ -20,26 +20,26 @@
 	const yellow = '#BB9F06';
 	const blue = '#769892';
 	const ltgrey = '#8F8F8F'
-	const dkgrey = '#414142'
+	const dkgrey = '#333'
 
-	const width = 800;
-	const height = 600;
+	const width = 1200;
+	const height = 900;
 
-	const padding = 5;
+	
 
 	let heightScale = d3.scaleLinear()
 				.domain([d3.min(data, d => d.total_length), d3.max(data, d => d.total_length)])
-				.range([5, height/9 - padding]);
+				.range([8, height/6]);
 	
 	let widthScale = d3.scaleBand()
-				.domain(d3.range(0,19))
+				.domain(d3.range(0,29))
 				.range([0, width-padding]);
 
-	// console.log(d3.range(0,19))
 	
+	// RECT HEIGHT AND WIDTH			
 	const maxHeight = heightScale(d3.max(data, d => d.total_length));
-	const barWidth = widthScale.bandwidth();
-	console.log(barWidth)
+	const barWidth = 23 //widthScale.bandwidth();
+	const padding = 10;
 	
 	// SVG Import
 	import InlineSVG from 'svelte-inline-svg';
@@ -71,7 +71,7 @@
 	<Swiper
 	direction={'vertical'}
     spaceBetween={30}
-    slidesPerView={1}
+    slidesPerView={0.5}
 	mousewheel={true}
 	speed={1000}
 	autoHeight={true}
@@ -109,61 +109,61 @@
 						transform='translate({d.index*(barWidth+padding)}, {d.row*maxHeight})'/>
 					<!-- PEOPLE -->
 					{#each d.schop_matches.matched_positions as e}
-						<rect width={barWidth} height='1' 
+						<rect width={barWidth} height='0.5' 
 						transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={pink}/>
 					{/each}
 					{#each d.wagn_matches.matched_positions as e}
-						<rect width={barWidth} height='1' 
+						<rect width={barWidth} height='0.5' 
 						transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={pink}/>
 					{/each}
 					{#each d.kant_matches.matched_positions as e}
-						<rect width={barWidth} height='1' 
+						<rect width={barWidth} height='0.5' 
 						transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={pink}/>
 					{/each}
 		
 					<!-- GENERAL -->
 					{#each d.deutch_matches.matched_positions as e}
-						<rect width={barWidth} height='1' 
+						<rect width={barWidth} height='0.5' 
 						transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={ltgrey}/>
 					{/each}
 					{#each d.musik_matches.matched_positions as e}
-						<rect width={barWidth} height='1' 
+						<rect width={barWidth} height='0.5' 
 						transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={ltgrey}/>
 					{/each}
 		
 					<!-- PHILOSOPHY -->
 					{#each d.wille_matches.matched_positions as e}
-						<rect width={barWidth} height='1' 
+						<rect width={barWidth} height='0.5' 
 						transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={blue}/>
 					{/each}
 					{#each d.ding_matches.matched_positions as e}
-						<rect width={barWidth} height='1' 
+						<rect width={barWidth} height='0.5' 
 						transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={blue}/>
 					{/each}
 					{#each d.wahr_matches.matched_positions as e}
-						<rect width={barWidth} height='1' 
+						<rect width={barWidth} height='0.5' 
 						transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={blue}/>
 					{/each}
 					{#each d.tragische_matches.matched_positions as e}
-						<rect width={barWidth} height='1' 
+						<rect width={barWidth} height='0.5' 
 						transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={blue}/>
 					{/each}
 					{#each d.leiden_matches.matched_positions as e}
-						<rect width={barWidth} height='1' 
+						<rect width={barWidth} height='0.5' 
 						transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={blue}/>
 					{/each}
 		
 					<!-- RELIGION -->
 					{#each d.hindu_matches.matched_positions as e}
-						<rect width={barWidth} height='1' 
+						<rect width={barWidth} height='0.5' 
 						transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={yellow}/>
 					{/each}
 					{#each d.budd_matches.matched_positions as e}
-						<rect width={barWidth} height='1' 
+						<rect width={barWidth} height='0.5' 
 						transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={yellow}/>
 					{/each}
 					{#each d.schleier_matches.matched_positions as e}
-						<rect width={barWidth} height='1' 
+						<rect width={barWidth} height='0.5' 
 						transform='translate({d.index*(barWidth+padding)}, {heightScale(e) + d.row*maxHeight})' fill={yellow}/>
 					{/each}
 				{/each}
@@ -181,9 +181,9 @@
 	<SwiperSlide>
 		<div class='textSwipe'>
 		<h2>What is this?</h2>
-		<p>This is a prototype created by students, Rocío Márquez Salguero, Sara Chodosh and Rebecca Pazos during the first workshop for their Masters for Visual Tools with the University of Girona.</p>
-		<p>They were assisted by mentors Karma Peiro and Carlo Zapponi as well as an expert on Nietzsche, Joaquin Campodonico.</p>
-		<p>The first static prototype was created in <a href="https://www.figma.com/file/XAEL4J1Z6TfVnyARgltc8U/workshop-1-shop-nietz?node-id=111%3A0">Figma</a>, code is hosted on <a href="https://github.com/sarachodosh/workshop1-nietzsche">Github</a> and what you are now seeing are the final efforts of an interactive prototype using D3 and some static SVGs.</p>
+		<p>This is a prototype created by students, Rocío Márquez Salguero, Sara Chodosh, and Rebecca Pazos during the first workshop for their Masters for Visual Tools with the University of Girona.</p>
+		<p>They were assisted by mentors Karma Peiró and Carlo Zapponi as well as an expert on Nietzsche, Joaquin Campodonico.</p>
+		<p>The first static prototype was created in <a href="https://www.figma.com/file/XAEL4J1Z6TfVnyARgltc8U/workshop-0.5-shop-nietz?node-id=111%3A0">Figma</a>, code is hosted on <a href="https://github.com/sarachodosh/workshop1-nietzsche">Github</a> and what you are now seeing are the final efforts of an interactive prototype using D3 and some static SVGs.</p>
 		<p>Our goal for the workshop was to:</p>
 		<ul>
 			<li>Provide a <strong>search & display</strong> function to explore his Posthumous fragments, realised in the third secion called "Fragments Explorer"</li>
@@ -256,7 +256,7 @@
 	.fragments-d3 {
 		width: 1000px;
 		position: fixed;
-		margin: -15vh 0 0 20vw;
+		margin: -20vh 0 0 20vw;
 	}
 
 	Swiper {

@@ -28484,85 +28484,85 @@ var app = (function () {
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[9] = list[i];
+    	child_ctx[8] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[12] = list[i];
+    	child_ctx[11] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_2(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[12] = list[i];
+    	child_ctx[11] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_3(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[12] = list[i];
+    	child_ctx[11] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_4(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[12] = list[i];
+    	child_ctx[11] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_5(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[12] = list[i];
+    	child_ctx[11] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_6(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[12] = list[i];
+    	child_ctx[11] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_7(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[12] = list[i];
+    	child_ctx[11] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_8(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[12] = list[i];
+    	child_ctx[11] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_9(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[12] = list[i];
+    	child_ctx[11] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_10(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[12] = list[i];
+    	child_ctx[11] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_11(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[12] = list[i];
+    	child_ctx[11] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_12(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[12] = list[i];
+    	child_ctx[11] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_13(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[12] = list[i];
+    	child_ctx[11] = list[i];
     	return child_ctx;
     }
 
@@ -28581,8 +28581,8 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			create_component(inlinesvg.$$.fragment);
-    			attr_dev(div, "class", "full-width svelte-rw5awm");
-    			add_location(div, file, 82, 2, 2138);
+    			attr_dev(div, "class", "full-width svelte-xcxob2");
+    			add_location(div, file, 82, 2, 2110);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -28631,8 +28631,8 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			create_component(inlinesvg.$$.fragment);
-    			attr_dev(div, "class", "full-width svelte-rw5awm");
-    			add_location(div, file, 88, 2, 2243);
+    			attr_dev(div, "class", "full-width svelte-xcxob2");
+    			add_location(div, file, 88, 2, 2215);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -28677,8 +28677,8 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			create_component(inlinesvg.$$.fragment);
-    			attr_dev(div, "class", "full-width svelte-rw5awm");
-    			add_location(div, file, 94, 2, 2342);
+    			attr_dev(div, "class", "full-width svelte-xcxob2");
+    			add_location(div, file, 94, 2, 2314);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -28739,7 +28739,7 @@ var app = (function () {
     			insert_dev(target, each_1_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*data, barWidth, heightScale, maxHeight*/ 15) {
+    			if (dirty[0] & /*data, heightScale, maxHeight*/ 7) {
     				each_value = /*data*/ ctx[0];
     				validate_each_argument(each_value);
     				let i;
@@ -28788,17 +28788,17 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			rect = svg_element("rect");
-    			attr_dev(rect, "width", /*barWidth*/ ctx[3]);
-    			attr_dev(rect, "height", "1");
-    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
+    			attr_dev(rect, "width", barWidth);
+    			attr_dev(rect, "height", "0.5");
+    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[11]) + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", pink);
-    			add_location(rect, file, 111, 6, 2863);
+    			add_location(rect, file, 111, 6, 2835);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")")) {
+    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[11]) + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2]) + ")")) {
     				attr_dev(rect, "transform", rect_transform_value);
     			}
     		},
@@ -28826,17 +28826,17 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			rect = svg_element("rect");
-    			attr_dev(rect, "width", /*barWidth*/ ctx[3]);
-    			attr_dev(rect, "height", "1");
-    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
+    			attr_dev(rect, "width", barWidth);
+    			attr_dev(rect, "height", "0.5");
+    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[11]) + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", pink);
-    			add_location(rect, file, 115, 6, 3076);
+    			add_location(rect, file, 115, 6, 3050);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")")) {
+    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[11]) + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2]) + ")")) {
     				attr_dev(rect, "transform", rect_transform_value);
     			}
     		},
@@ -28864,17 +28864,17 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			rect = svg_element("rect");
-    			attr_dev(rect, "width", /*barWidth*/ ctx[3]);
-    			attr_dev(rect, "height", "1");
-    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
+    			attr_dev(rect, "width", barWidth);
+    			attr_dev(rect, "height", "0.5");
+    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[11]) + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", pink);
-    			add_location(rect, file, 119, 6, 3289);
+    			add_location(rect, file, 119, 6, 3265);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")")) {
+    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[11]) + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2]) + ")")) {
     				attr_dev(rect, "transform", rect_transform_value);
     			}
     		},
@@ -28902,17 +28902,17 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			rect = svg_element("rect");
-    			attr_dev(rect, "width", /*barWidth*/ ctx[3]);
-    			attr_dev(rect, "height", "1");
-    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
+    			attr_dev(rect, "width", barWidth);
+    			attr_dev(rect, "height", "0.5");
+    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[11]) + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", ltgrey);
-    			add_location(rect, file, 125, 6, 3529);
+    			add_location(rect, file, 125, 6, 3507);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")")) {
+    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[11]) + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2]) + ")")) {
     				attr_dev(rect, "transform", rect_transform_value);
     			}
     		},
@@ -28940,17 +28940,17 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			rect = svg_element("rect");
-    			attr_dev(rect, "width", /*barWidth*/ ctx[3]);
-    			attr_dev(rect, "height", "1");
-    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
+    			attr_dev(rect, "width", barWidth);
+    			attr_dev(rect, "height", "0.5");
+    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[11]) + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", ltgrey);
-    			add_location(rect, file, 129, 6, 3745);
+    			add_location(rect, file, 129, 6, 3725);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")")) {
+    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[11]) + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2]) + ")")) {
     				attr_dev(rect, "transform", rect_transform_value);
     			}
     		},
@@ -28978,17 +28978,17 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			rect = svg_element("rect");
-    			attr_dev(rect, "width", /*barWidth*/ ctx[3]);
-    			attr_dev(rect, "height", "1");
-    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
+    			attr_dev(rect, "width", barWidth);
+    			attr_dev(rect, "height", "0.5");
+    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[11]) + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", blue);
-    			add_location(rect, file, 135, 6, 3989);
+    			add_location(rect, file, 135, 6, 3971);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")")) {
+    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[11]) + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2]) + ")")) {
     				attr_dev(rect, "transform", rect_transform_value);
     			}
     		},
@@ -29016,17 +29016,17 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			rect = svg_element("rect");
-    			attr_dev(rect, "width", /*barWidth*/ ctx[3]);
-    			attr_dev(rect, "height", "1");
-    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
+    			attr_dev(rect, "width", barWidth);
+    			attr_dev(rect, "height", "0.5");
+    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[11]) + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", blue);
-    			add_location(rect, file, 139, 6, 4202);
+    			add_location(rect, file, 139, 6, 4186);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")")) {
+    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[11]) + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2]) + ")")) {
     				attr_dev(rect, "transform", rect_transform_value);
     			}
     		},
@@ -29054,17 +29054,17 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			rect = svg_element("rect");
-    			attr_dev(rect, "width", /*barWidth*/ ctx[3]);
-    			attr_dev(rect, "height", "1");
-    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
+    			attr_dev(rect, "width", barWidth);
+    			attr_dev(rect, "height", "0.5");
+    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[11]) + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", blue);
-    			add_location(rect, file, 143, 6, 4415);
+    			add_location(rect, file, 143, 6, 4401);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")")) {
+    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[11]) + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2]) + ")")) {
     				attr_dev(rect, "transform", rect_transform_value);
     			}
     		},
@@ -29092,17 +29092,17 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			rect = svg_element("rect");
-    			attr_dev(rect, "width", /*barWidth*/ ctx[3]);
-    			attr_dev(rect, "height", "1");
-    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
+    			attr_dev(rect, "width", barWidth);
+    			attr_dev(rect, "height", "0.5");
+    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[11]) + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", blue);
-    			add_location(rect, file, 147, 6, 4633);
+    			add_location(rect, file, 147, 6, 4621);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")")) {
+    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[11]) + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2]) + ")")) {
     				attr_dev(rect, "transform", rect_transform_value);
     			}
     		},
@@ -29130,17 +29130,17 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			rect = svg_element("rect");
-    			attr_dev(rect, "width", /*barWidth*/ ctx[3]);
-    			attr_dev(rect, "height", "1");
-    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
+    			attr_dev(rect, "width", barWidth);
+    			attr_dev(rect, "height", "0.5");
+    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[11]) + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", blue);
-    			add_location(rect, file, 151, 6, 4848);
+    			add_location(rect, file, 151, 6, 4838);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")")) {
+    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[11]) + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2]) + ")")) {
     				attr_dev(rect, "transform", rect_transform_value);
     			}
     		},
@@ -29168,17 +29168,17 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			rect = svg_element("rect");
-    			attr_dev(rect, "width", /*barWidth*/ ctx[3]);
-    			attr_dev(rect, "height", "1");
-    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
+    			attr_dev(rect, "width", barWidth);
+    			attr_dev(rect, "height", "0.5");
+    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[11]) + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", yellow);
-    			add_location(rect, file, 157, 6, 5088);
+    			add_location(rect, file, 157, 6, 5080);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")")) {
+    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[11]) + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2]) + ")")) {
     				attr_dev(rect, "transform", rect_transform_value);
     			}
     		},
@@ -29206,17 +29206,17 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			rect = svg_element("rect");
-    			attr_dev(rect, "width", /*barWidth*/ ctx[3]);
-    			attr_dev(rect, "height", "1");
-    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
+    			attr_dev(rect, "width", barWidth);
+    			attr_dev(rect, "height", "0.5");
+    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[11]) + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", yellow);
-    			add_location(rect, file, 161, 6, 5303);
+    			add_location(rect, file, 161, 6, 5297);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")")) {
+    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[11]) + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2]) + ")")) {
     				attr_dev(rect, "transform", rect_transform_value);
     			}
     		},
@@ -29244,17 +29244,17 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			rect = svg_element("rect");
-    			attr_dev(rect, "width", /*barWidth*/ ctx[3]);
-    			attr_dev(rect, "height", "1");
-    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")");
+    			attr_dev(rect, "width", barWidth);
+    			attr_dev(rect, "height", "0.5");
+    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[11]) + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2]) + ")");
     			attr_dev(rect, "fill", yellow);
-    			add_location(rect, file, 165, 6, 5522);
+    			add_location(rect, file, 165, 6, 5518);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[12]) + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2]) + ")")) {
+    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + (/*heightScale*/ ctx[1](/*e*/ ctx[11]) + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2]) + ")")) {
     				attr_dev(rect, "transform", rect_transform_value);
     			}
     		},
@@ -29292,7 +29292,7 @@ var app = (function () {
     	let each10_anchor;
     	let each11_anchor;
     	let each12_anchor;
-    	let each_value_13 = /*d*/ ctx[9].schop_matches.matched_positions;
+    	let each_value_13 = /*d*/ ctx[8].schop_matches.matched_positions;
     	validate_each_argument(each_value_13);
     	let each_blocks_12 = [];
 
@@ -29300,7 +29300,7 @@ var app = (function () {
     		each_blocks_12[i] = create_each_block_13(get_each_context_13(ctx, each_value_13, i));
     	}
 
-    	let each_value_12 = /*d*/ ctx[9].wagn_matches.matched_positions;
+    	let each_value_12 = /*d*/ ctx[8].wagn_matches.matched_positions;
     	validate_each_argument(each_value_12);
     	let each_blocks_11 = [];
 
@@ -29308,7 +29308,7 @@ var app = (function () {
     		each_blocks_11[i] = create_each_block_12(get_each_context_12(ctx, each_value_12, i));
     	}
 
-    	let each_value_11 = /*d*/ ctx[9].kant_matches.matched_positions;
+    	let each_value_11 = /*d*/ ctx[8].kant_matches.matched_positions;
     	validate_each_argument(each_value_11);
     	let each_blocks_10 = [];
 
@@ -29316,7 +29316,7 @@ var app = (function () {
     		each_blocks_10[i] = create_each_block_11(get_each_context_11(ctx, each_value_11, i));
     	}
 
-    	let each_value_10 = /*d*/ ctx[9].deutch_matches.matched_positions;
+    	let each_value_10 = /*d*/ ctx[8].deutch_matches.matched_positions;
     	validate_each_argument(each_value_10);
     	let each_blocks_9 = [];
 
@@ -29324,7 +29324,7 @@ var app = (function () {
     		each_blocks_9[i] = create_each_block_10(get_each_context_10(ctx, each_value_10, i));
     	}
 
-    	let each_value_9 = /*d*/ ctx[9].musik_matches.matched_positions;
+    	let each_value_9 = /*d*/ ctx[8].musik_matches.matched_positions;
     	validate_each_argument(each_value_9);
     	let each_blocks_8 = [];
 
@@ -29332,7 +29332,7 @@ var app = (function () {
     		each_blocks_8[i] = create_each_block_9(get_each_context_9(ctx, each_value_9, i));
     	}
 
-    	let each_value_8 = /*d*/ ctx[9].wille_matches.matched_positions;
+    	let each_value_8 = /*d*/ ctx[8].wille_matches.matched_positions;
     	validate_each_argument(each_value_8);
     	let each_blocks_7 = [];
 
@@ -29340,7 +29340,7 @@ var app = (function () {
     		each_blocks_7[i] = create_each_block_8(get_each_context_8(ctx, each_value_8, i));
     	}
 
-    	let each_value_7 = /*d*/ ctx[9].ding_matches.matched_positions;
+    	let each_value_7 = /*d*/ ctx[8].ding_matches.matched_positions;
     	validate_each_argument(each_value_7);
     	let each_blocks_6 = [];
 
@@ -29348,7 +29348,7 @@ var app = (function () {
     		each_blocks_6[i] = create_each_block_7(get_each_context_7(ctx, each_value_7, i));
     	}
 
-    	let each_value_6 = /*d*/ ctx[9].wahr_matches.matched_positions;
+    	let each_value_6 = /*d*/ ctx[8].wahr_matches.matched_positions;
     	validate_each_argument(each_value_6);
     	let each_blocks_5 = [];
 
@@ -29356,7 +29356,7 @@ var app = (function () {
     		each_blocks_5[i] = create_each_block_6(get_each_context_6(ctx, each_value_6, i));
     	}
 
-    	let each_value_5 = /*d*/ ctx[9].tragische_matches.matched_positions;
+    	let each_value_5 = /*d*/ ctx[8].tragische_matches.matched_positions;
     	validate_each_argument(each_value_5);
     	let each_blocks_4 = [];
 
@@ -29364,7 +29364,7 @@ var app = (function () {
     		each_blocks_4[i] = create_each_block_5(get_each_context_5(ctx, each_value_5, i));
     	}
 
-    	let each_value_4 = /*d*/ ctx[9].leiden_matches.matched_positions;
+    	let each_value_4 = /*d*/ ctx[8].leiden_matches.matched_positions;
     	validate_each_argument(each_value_4);
     	let each_blocks_3 = [];
 
@@ -29372,7 +29372,7 @@ var app = (function () {
     		each_blocks_3[i] = create_each_block_4(get_each_context_4(ctx, each_value_4, i));
     	}
 
-    	let each_value_3 = /*d*/ ctx[9].hindu_matches.matched_positions;
+    	let each_value_3 = /*d*/ ctx[8].hindu_matches.matched_positions;
     	validate_each_argument(each_value_3);
     	let each_blocks_2 = [];
 
@@ -29380,7 +29380,7 @@ var app = (function () {
     		each_blocks_2[i] = create_each_block_3(get_each_context_3(ctx, each_value_3, i));
     	}
 
-    	let each_value_2 = /*d*/ ctx[9].budd_matches.matched_positions;
+    	let each_value_2 = /*d*/ ctx[8].budd_matches.matched_positions;
     	validate_each_argument(each_value_2);
     	let each_blocks_1 = [];
 
@@ -29388,7 +29388,7 @@ var app = (function () {
     		each_blocks_1[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
     	}
 
-    	let each_value_1 = /*d*/ ctx[9].schleier_matches.matched_positions;
+    	let each_value_1 = /*d*/ ctx[8].schleier_matches.matched_positions;
     	validate_each_argument(each_value_1);
     	let each_blocks = [];
 
@@ -29477,11 +29477,11 @@ var app = (function () {
     			}
 
     			each12_anchor = empty$3();
-    			attr_dev(rect, "width", /*barWidth*/ ctx[3]);
-    			attr_dev(rect, "height", rect_height_value = /*heightScale*/ ctx[1](/*d*/ ctx[9].total_length));
+    			attr_dev(rect, "width", barWidth);
+    			attr_dev(rect, "height", rect_height_value = /*heightScale*/ ctx[1](/*d*/ ctx[8].total_length));
     			attr_dev(rect, "fill", dkgrey);
-    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2] + ")");
-    			add_location(rect, file, 107, 5, 2630);
+    			attr_dev(rect, "transform", rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2] + ")");
+    			add_location(rect, file, 107, 5, 2602);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, rect, anchor);
@@ -29565,16 +29565,16 @@ var app = (function () {
     			insert_dev(target, each12_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*data*/ 1 && rect_height_value !== (rect_height_value = /*heightScale*/ ctx[1](/*d*/ ctx[9].total_length))) {
+    			if (dirty[0] & /*data*/ 1 && rect_height_value !== (rect_height_value = /*heightScale*/ ctx[1](/*d*/ ctx[8].total_length))) {
     				attr_dev(rect, "height", rect_height_value);
     			}
 
-    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[9].index * (/*barWidth*/ ctx[3] + padding) + ", " + /*d*/ ctx[9].row * /*maxHeight*/ ctx[2] + ")")) {
+    			if (dirty[0] & /*data*/ 1 && rect_transform_value !== (rect_transform_value = "translate(" + /*d*/ ctx[8].index * (barWidth + padding) + ", " + /*d*/ ctx[8].row * /*maxHeight*/ ctx[2] + ")")) {
     				attr_dev(rect, "transform", rect_transform_value);
     			}
 
-    			if (dirty[0] & /*barWidth, data, heightScale, maxHeight*/ 15) {
-    				each_value_13 = /*d*/ ctx[9].schop_matches.matched_positions;
+    			if (dirty[0] & /*data, heightScale, maxHeight*/ 7) {
+    				each_value_13 = /*d*/ ctx[8].schop_matches.matched_positions;
     				validate_each_argument(each_value_13);
     				let i;
 
@@ -29597,8 +29597,8 @@ var app = (function () {
     				each_blocks_12.length = each_value_13.length;
     			}
 
-    			if (dirty[0] & /*barWidth, data, heightScale, maxHeight*/ 15) {
-    				each_value_12 = /*d*/ ctx[9].wagn_matches.matched_positions;
+    			if (dirty[0] & /*data, heightScale, maxHeight*/ 7) {
+    				each_value_12 = /*d*/ ctx[8].wagn_matches.matched_positions;
     				validate_each_argument(each_value_12);
     				let i;
 
@@ -29621,8 +29621,8 @@ var app = (function () {
     				each_blocks_11.length = each_value_12.length;
     			}
 
-    			if (dirty[0] & /*barWidth, data, heightScale, maxHeight*/ 15) {
-    				each_value_11 = /*d*/ ctx[9].kant_matches.matched_positions;
+    			if (dirty[0] & /*data, heightScale, maxHeight*/ 7) {
+    				each_value_11 = /*d*/ ctx[8].kant_matches.matched_positions;
     				validate_each_argument(each_value_11);
     				let i;
 
@@ -29645,8 +29645,8 @@ var app = (function () {
     				each_blocks_10.length = each_value_11.length;
     			}
 
-    			if (dirty[0] & /*barWidth, data, heightScale, maxHeight*/ 15) {
-    				each_value_10 = /*d*/ ctx[9].deutch_matches.matched_positions;
+    			if (dirty[0] & /*data, heightScale, maxHeight*/ 7) {
+    				each_value_10 = /*d*/ ctx[8].deutch_matches.matched_positions;
     				validate_each_argument(each_value_10);
     				let i;
 
@@ -29669,8 +29669,8 @@ var app = (function () {
     				each_blocks_9.length = each_value_10.length;
     			}
 
-    			if (dirty[0] & /*barWidth, data, heightScale, maxHeight*/ 15) {
-    				each_value_9 = /*d*/ ctx[9].musik_matches.matched_positions;
+    			if (dirty[0] & /*data, heightScale, maxHeight*/ 7) {
+    				each_value_9 = /*d*/ ctx[8].musik_matches.matched_positions;
     				validate_each_argument(each_value_9);
     				let i;
 
@@ -29693,8 +29693,8 @@ var app = (function () {
     				each_blocks_8.length = each_value_9.length;
     			}
 
-    			if (dirty[0] & /*barWidth, data, heightScale, maxHeight*/ 15) {
-    				each_value_8 = /*d*/ ctx[9].wille_matches.matched_positions;
+    			if (dirty[0] & /*data, heightScale, maxHeight*/ 7) {
+    				each_value_8 = /*d*/ ctx[8].wille_matches.matched_positions;
     				validate_each_argument(each_value_8);
     				let i;
 
@@ -29717,8 +29717,8 @@ var app = (function () {
     				each_blocks_7.length = each_value_8.length;
     			}
 
-    			if (dirty[0] & /*barWidth, data, heightScale, maxHeight*/ 15) {
-    				each_value_7 = /*d*/ ctx[9].ding_matches.matched_positions;
+    			if (dirty[0] & /*data, heightScale, maxHeight*/ 7) {
+    				each_value_7 = /*d*/ ctx[8].ding_matches.matched_positions;
     				validate_each_argument(each_value_7);
     				let i;
 
@@ -29741,8 +29741,8 @@ var app = (function () {
     				each_blocks_6.length = each_value_7.length;
     			}
 
-    			if (dirty[0] & /*barWidth, data, heightScale, maxHeight*/ 15) {
-    				each_value_6 = /*d*/ ctx[9].wahr_matches.matched_positions;
+    			if (dirty[0] & /*data, heightScale, maxHeight*/ 7) {
+    				each_value_6 = /*d*/ ctx[8].wahr_matches.matched_positions;
     				validate_each_argument(each_value_6);
     				let i;
 
@@ -29765,8 +29765,8 @@ var app = (function () {
     				each_blocks_5.length = each_value_6.length;
     			}
 
-    			if (dirty[0] & /*barWidth, data, heightScale, maxHeight*/ 15) {
-    				each_value_5 = /*d*/ ctx[9].tragische_matches.matched_positions;
+    			if (dirty[0] & /*data, heightScale, maxHeight*/ 7) {
+    				each_value_5 = /*d*/ ctx[8].tragische_matches.matched_positions;
     				validate_each_argument(each_value_5);
     				let i;
 
@@ -29789,8 +29789,8 @@ var app = (function () {
     				each_blocks_4.length = each_value_5.length;
     			}
 
-    			if (dirty[0] & /*barWidth, data, heightScale, maxHeight*/ 15) {
-    				each_value_4 = /*d*/ ctx[9].leiden_matches.matched_positions;
+    			if (dirty[0] & /*data, heightScale, maxHeight*/ 7) {
+    				each_value_4 = /*d*/ ctx[8].leiden_matches.matched_positions;
     				validate_each_argument(each_value_4);
     				let i;
 
@@ -29813,8 +29813,8 @@ var app = (function () {
     				each_blocks_3.length = each_value_4.length;
     			}
 
-    			if (dirty[0] & /*barWidth, data, heightScale, maxHeight*/ 15) {
-    				each_value_3 = /*d*/ ctx[9].hindu_matches.matched_positions;
+    			if (dirty[0] & /*data, heightScale, maxHeight*/ 7) {
+    				each_value_3 = /*d*/ ctx[8].hindu_matches.matched_positions;
     				validate_each_argument(each_value_3);
     				let i;
 
@@ -29837,8 +29837,8 @@ var app = (function () {
     				each_blocks_2.length = each_value_3.length;
     			}
 
-    			if (dirty[0] & /*barWidth, data, heightScale, maxHeight*/ 15) {
-    				each_value_2 = /*d*/ ctx[9].budd_matches.matched_positions;
+    			if (dirty[0] & /*data, heightScale, maxHeight*/ 7) {
+    				each_value_2 = /*d*/ ctx[8].budd_matches.matched_positions;
     				validate_each_argument(each_value_2);
     				let i;
 
@@ -29861,8 +29861,8 @@ var app = (function () {
     				each_blocks_1.length = each_value_2.length;
     			}
 
-    			if (dirty[0] & /*barWidth, data, heightScale, maxHeight*/ 15) {
-    				each_value_1 = /*d*/ ctx[9].schleier_matches.matched_positions;
+    			if (dirty[0] & /*data, heightScale, maxHeight*/ 7) {
+    				each_value_1 = /*d*/ ctx[8].schleier_matches.matched_positions;
     				validate_each_argument(each_value_1);
     				let i;
 
@@ -29951,12 +29951,12 @@ var app = (function () {
     			div1 = element("div");
     			svg = svg_element("svg");
     			if (if_block) if_block.c();
-    			attr_dev(div0, "class", "full-width svelte-rw5awm");
-    			add_location(div0, file, 100, 2, 2443);
+    			attr_dev(div0, "class", "full-width svelte-xcxob2");
+    			add_location(div0, file, 100, 2, 2415);
     			attr_dev(svg, "viewBox", "0 0 " + width + " " + height);
-    			add_location(svg, file, 104, 3, 2548);
-    			attr_dev(div1, "class", "fragments-d3 svelte-rw5awm");
-    			add_location(div1, file, 103, 2, 2518);
+    			add_location(svg, file, 104, 3, 2520);
+    			attr_dev(div1, "class", "fragments-d3 svelte-xcxob2");
+    			add_location(div1, file, 103, 2, 2490);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -30025,8 +30025,8 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			create_component(inlinesvg.$$.fragment);
-    			attr_dev(div, "class", "full-width svelte-rw5awm");
-    			add_location(div, file, 175, 2, 5758);
+    			attr_dev(div, "class", "full-width svelte-xcxob2");
+    			add_location(div, file, 175, 2, 5756);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -30111,10 +30111,10 @@ var app = (function () {
     			h2.textContent = "What is this?";
     			t1 = space();
     			p0 = element("p");
-    			p0.textContent = "This is a prototype created by students, Rocío Márquez Salguero, Sara Chodosh and Rebecca Pazos during the first workshop for their Masters for Visual Tools with the University of Girona.";
+    			p0.textContent = "This is a prototype created by students, Rocío Márquez Salguero, Sara Chodosh, and Rebecca Pazos during the first workshop for their Masters for Visual Tools with the University of Girona.";
     			t3 = space();
     			p1 = element("p");
-    			p1.textContent = "They were assisted by mentors Karma Peiro and Carlo Zapponi as well as an expert on Nietzsche, Joaquin Campodonico.";
+    			p1.textContent = "They were assisted by mentors Karma Peiró and Carlo Zapponi as well as an expert on Nietzsche, Joaquin Campodonico.";
     			t5 = space();
     			p2 = element("p");
     			t6 = text$2("The first static prototype was created in ");
@@ -30158,47 +30158,47 @@ var app = (function () {
     			a2 = element("a");
     			a2.textContent = "LinkedIn";
     			t32 = text$2(".");
-    			attr_dev(h2, "class", "svelte-rw5awm");
-    			add_location(h2, file, 182, 2, 5887);
-    			attr_dev(p0, "class", "svelte-rw5awm");
-    			add_location(p0, file, 183, 2, 5912);
-    			attr_dev(p1, "class", "svelte-rw5awm");
-    			add_location(p1, file, 184, 2, 6109);
-    			attr_dev(a0, "href", "https://www.figma.com/file/XAEL4J1Z6TfVnyARgltc8U/workshop-1-shop-nietz?node-id=111%3A0");
-    			attr_dev(a0, "class", "svelte-rw5awm");
-    			add_location(a0, file, 185, 47, 6279);
+    			attr_dev(h2, "class", "svelte-xcxob2");
+    			add_location(h2, file, 182, 2, 5885);
+    			attr_dev(p0, "class", "svelte-xcxob2");
+    			add_location(p0, file, 183, 2, 5910);
+    			attr_dev(p1, "class", "svelte-xcxob2");
+    			add_location(p1, file, 184, 2, 6108);
+    			attr_dev(a0, "href", "https://www.figma.com/file/XAEL4J1Z6TfVnyARgltc8U/workshop-0.5-shop-nietz?node-id=111%3A0");
+    			attr_dev(a0, "class", "svelte-xcxob2");
+    			add_location(a0, file, 185, 47, 6278);
     			attr_dev(a1, "href", "https://github.com/sarachodosh/workshop1-nietzsche");
-    			attr_dev(a1, "class", "svelte-rw5awm");
-    			add_location(a1, file, 185, 174, 6406);
-    			attr_dev(p2, "class", "svelte-rw5awm");
-    			add_location(p2, file, 185, 2, 6234);
-    			attr_dev(p3, "class", "svelte-rw5awm");
-    			add_location(p3, file, 186, 2, 6593);
-    			attr_dev(strong0, "class", "svelte-rw5awm");
-    			add_location(strong0, file, 188, 17, 6658);
-    			attr_dev(li0, "class", "svelte-rw5awm");
-    			add_location(li0, file, 188, 3, 6644);
-    			attr_dev(strong1, "class", "svelte-rw5awm");
-    			add_location(strong1, file, 189, 56, 6856);
-    			attr_dev(li1, "class", "svelte-rw5awm");
-    			add_location(li1, file, 189, 3, 6803);
-    			attr_dev(strong2, "class", "svelte-rw5awm");
-    			add_location(strong2, file, 190, 36, 6994);
-    			attr_dev(li2, "class", "svelte-rw5awm");
-    			add_location(li2, file, 190, 3, 6961);
-    			attr_dev(strong3, "class", "svelte-rw5awm");
-    			add_location(strong3, file, 191, 73, 7181);
-    			attr_dev(li3, "class", "svelte-rw5awm");
-    			add_location(li3, file, 191, 3, 7111);
-    			attr_dev(ul, "class", "svelte-rw5awm");
-    			add_location(ul, file, 187, 2, 6636);
+    			attr_dev(a1, "class", "svelte-xcxob2");
+    			add_location(a1, file, 185, 176, 6407);
+    			attr_dev(p2, "class", "svelte-xcxob2");
+    			add_location(p2, file, 185, 2, 6233);
+    			attr_dev(p3, "class", "svelte-xcxob2");
+    			add_location(p3, file, 186, 2, 6594);
+    			attr_dev(strong0, "class", "svelte-xcxob2");
+    			add_location(strong0, file, 188, 17, 6659);
+    			attr_dev(li0, "class", "svelte-xcxob2");
+    			add_location(li0, file, 188, 3, 6645);
+    			attr_dev(strong1, "class", "svelte-xcxob2");
+    			add_location(strong1, file, 189, 56, 6857);
+    			attr_dev(li1, "class", "svelte-xcxob2");
+    			add_location(li1, file, 189, 3, 6804);
+    			attr_dev(strong2, "class", "svelte-xcxob2");
+    			add_location(strong2, file, 190, 36, 6995);
+    			attr_dev(li2, "class", "svelte-xcxob2");
+    			add_location(li2, file, 190, 3, 6962);
+    			attr_dev(strong3, "class", "svelte-xcxob2");
+    			add_location(strong3, file, 191, 73, 7182);
+    			attr_dev(li3, "class", "svelte-xcxob2");
+    			add_location(li3, file, 191, 3, 7112);
+    			attr_dev(ul, "class", "svelte-xcxob2");
+    			add_location(ul, file, 187, 2, 6637);
     			attr_dev(a2, "href", "https://www.linkedin.com/in/rebeccapazos/");
-    			attr_dev(a2, "class", "svelte-rw5awm");
-    			add_location(a2, file, 193, 82, 7338);
-    			attr_dev(p4, "class", "svelte-rw5awm");
-    			add_location(p4, file, 193, 2, 7258);
-    			attr_dev(div, "class", "textSwipe svelte-rw5awm");
-    			add_location(div, file, 181, 2, 5861);
+    			attr_dev(a2, "class", "svelte-xcxob2");
+    			add_location(a2, file, 193, 82, 7339);
+    			attr_dev(p4, "class", "svelte-xcxob2");
+    			add_location(p4, file, 193, 2, 7259);
+    			attr_dev(div, "class", "textSwipe svelte-xcxob2");
+    			add_location(div, file, 181, 2, 5859);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -30259,7 +30259,7 @@ var app = (function () {
     	return block;
     }
 
-    // (71:1) <Swiper  direction={'vertical'}     spaceBetween={30}     slidesPerView={1}  mousewheel={true}  speed={1000}  autoHeight={true}     on:slideChange={() => console.log('slide change')}     on:swiper={(e) => console.log(e.detail[0])}    >
+    // (71:1) <Swiper  direction={'vertical'}     spaceBetween={30}     slidesPerView={0.5}  mousewheel={true}  speed={1000}  autoHeight={true}     on:slideChange={() => console.log('slide change')}     on:swiper={(e) => console.log(e.detail[0])}    >
     function create_default_slot(ctx) {
     	let swiperslide0;
     	let t0;
@@ -30353,42 +30353,42 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const swiperslide0_changes = {};
 
-    			if (dirty[1] & /*$$scope*/ 256) {
+    			if (dirty[1] & /*$$scope*/ 128) {
     				swiperslide0_changes.$$scope = { dirty, ctx };
     			}
 
     			swiperslide0.$set(swiperslide0_changes);
     			const swiperslide1_changes = {};
 
-    			if (dirty[1] & /*$$scope*/ 256) {
+    			if (dirty[1] & /*$$scope*/ 128) {
     				swiperslide1_changes.$$scope = { dirty, ctx };
     			}
 
     			swiperslide1.$set(swiperslide1_changes);
     			const swiperslide2_changes = {};
 
-    			if (dirty[1] & /*$$scope*/ 256) {
+    			if (dirty[1] & /*$$scope*/ 128) {
     				swiperslide2_changes.$$scope = { dirty, ctx };
     			}
 
     			swiperslide2.$set(swiperslide2_changes);
     			const swiperslide3_changes = {};
 
-    			if (dirty[0] & /*data*/ 1 | dirty[1] & /*$$scope*/ 256) {
+    			if (dirty[0] & /*data*/ 1 | dirty[1] & /*$$scope*/ 128) {
     				swiperslide3_changes.$$scope = { dirty, ctx };
     			}
 
     			swiperslide3.$set(swiperslide3_changes);
     			const swiperslide4_changes = {};
 
-    			if (dirty[1] & /*$$scope*/ 256) {
+    			if (dirty[1] & /*$$scope*/ 128) {
     				swiperslide4_changes.$$scope = { dirty, ctx };
     			}
 
     			swiperslide4.$set(swiperslide4_changes);
     			const swiperslide5_changes = {};
 
-    			if (dirty[1] & /*$$scope*/ 256) {
+    			if (dirty[1] & /*$$scope*/ 128) {
     				swiperslide5_changes.$$scope = { dirty, ctx };
     			}
 
@@ -30432,7 +30432,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(71:1) <Swiper  direction={'vertical'}     spaceBetween={30}     slidesPerView={1}  mousewheel={true}  speed={1000}  autoHeight={true}     on:slideChange={() => console.log('slide change')}     on:swiper={(e) => console.log(e.detail[0])}    >",
+    		source: "(71:1) <Swiper  direction={'vertical'}     spaceBetween={30}     slidesPerView={0.5}  mousewheel={true}  speed={1000}  autoHeight={true}     on:slideChange={() => console.log('slide change')}     on:swiper={(e) => console.log(e.detail[0])}    >",
     		ctx
     	});
 
@@ -30448,7 +30448,7 @@ var app = (function () {
     			div = element("div");
     			attr_dev(div, "class", "swiper-pagination");
     			attr_dev(div, "slot", "pagination");
-    			add_location(div, file, 196, 1, 7434);
+    			add_location(div, file, 196, 1, 7435);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -30478,7 +30478,7 @@ var app = (function () {
     			div = element("div");
     			attr_dev(div, "class", "swiper-button-next");
     			attr_dev(div, "slot", "button-next");
-    			add_location(div, file, 197, 2, 7492);
+    			add_location(div, file, 197, 2, 7493);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -30508,7 +30508,7 @@ var app = (function () {
     			div = element("div");
     			attr_dev(div, "class", "swiper-button-prev");
     			attr_dev(div, "slot", "button-prev");
-    			add_location(div, file, 198, 3, 7553);
+    			add_location(div, file, 198, 3, 7554);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -30540,7 +30540,7 @@ var app = (function () {
     			props: {
     				direction: "vertical",
     				spaceBetween: 30,
-    				slidesPerView: 1,
+    				slidesPerView: 0.5,
     				mousewheel: true,
     				speed: 1000,
     				autoHeight: true,
@@ -30555,8 +30555,8 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	swiper.$on("slideChange", /*slideChange_handler*/ ctx[4]);
-    	swiper.$on("swiper", /*swiper_handler*/ ctx[5]);
+    	swiper.$on("slideChange", /*slideChange_handler*/ ctx[3]);
+    	swiper.$on("swiper", /*swiper_handler*/ ctx[4]);
 
     	const block = {
     		c: function create() {
@@ -30566,8 +30566,8 @@ var app = (function () {
     			main = element("main");
     			create_component(swiper.$$.fragment);
     			add_location(style, file, 1, 4, 18);
-    			attr_dev(main, "class", "svelte-rw5awm");
-    			add_location(main, file, 69, 0, 1874);
+    			attr_dev(main, "class", "svelte-xcxob2");
+    			add_location(main, file, 69, 0, 1844);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -30582,7 +30582,7 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const swiper_changes = {};
 
-    			if (dirty[0] & /*data*/ 1 | dirty[1] & /*$$scope*/ 256) {
+    			if (dirty[0] & /*data*/ 1 | dirty[1] & /*$$scope*/ 128) {
     				swiper_changes.$$scope = { dirty, ctx };
     			}
 
@@ -30620,10 +30620,11 @@ var app = (function () {
     const yellow = "#BB9F06";
     const blue = "#769892";
     const ltgrey = "#8F8F8F";
-    const dkgrey = "#414142";
-    const width = 800;
-    const height = 600;
-    const padding = 5;
+    const dkgrey = "#333";
+    const width = 1200;
+    const height = 900;
+    const barWidth = 23; //widthScale.bandwidth();
+    const padding = 10;
     const introDesktop = "build/assets/bg-header-all.svg";
     const topicsSVG = "build/assets/topics.svg";
     const wordsSVG = "build/assets/words.svg";
@@ -30638,14 +30639,12 @@ var app = (function () {
     	// console.log(data)
     	const testData = data[6];
 
-    	let heightScale = linear().domain([min$2(data, d => d.total_length), max$3(data, d => d.total_length)]).range([5, height / 9 - padding]);
-    	let widthScale = band().domain(sequence(0, 19)).range([0, width - padding]);
+    	let heightScale = linear().domain([min$2(data, d => d.total_length), max$3(data, d => d.total_length)]).range([8, height / 6]);
+    	let widthScale = band().domain(sequence(0, 29)).range([0, width - padding]);
 
-    	// console.log(d3.range(0,19))
+    	// RECT HEIGHT AND WIDTH			
     	const maxHeight = heightScale(max$3(data, d => d.total_length));
 
-    	const barWidth = widthScale.bandwidth();
-    	console.log(barWidth);
     	Swiper$2.use([Navigation$1, Pagination$1, Scrollbar$1, A11y$1, Mousewheel$1]);
 
     	const options = {
@@ -30684,11 +30683,11 @@ var app = (function () {
     		dkgrey,
     		width,
     		height,
-    		padding,
     		heightScale,
     		widthScale,
     		maxHeight,
     		barWidth,
+    		padding,
     		InlineSVG: Inline_svg,
     		introDesktop,
     		topicsSVG,
@@ -30716,7 +30715,7 @@ var app = (function () {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [data, heightScale, maxHeight, barWidth, slideChange_handler, swiper_handler];
+    	return [data, heightScale, maxHeight, slideChange_handler, swiper_handler];
     }
 
     class App extends SvelteComponentDev {
