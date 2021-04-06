@@ -183,7 +183,7 @@ import { run_all } from 'svelte/internal';
 		<div class='textSwipe'>
 		<h2>What is this?</h2>
 		<p>This is a prototype created by students, <a href="https://www.linkedin.com/in/romarquez/">Rocío Márquez Salguero</a>, <a href="https://www.linkedin.com/in/sara-chodosh-0551778b/">Sara Chodosh</a>, and <a href="https://www.linkedin.com/in/rebeccapazos/">Rebecca Pazos</a> during the first workshop for their <a href="http://www.mastervisualtoolsudg.com/">Masters in Visual Tools to Empower Citizens</a> with the University of Girona.</p>
-		<p>They were assisted by mentors <a href="https://www.karmapeiro.com/en/landing-en/">Karma Peiró</a> and <a href="https://www.makinguse.com/">Carlo Zapponi</a> as well as an expert on Nietzsche, <a href="https://www.linkedin.com/in/joaqu%C3%ADn-campod%C3%B3nico-g%C3%B3mez-215527195">Joaquin Campodonico.</a></p>
+		<p>They were assisted by mentors <a href="https://www.karmapeiro.com/en/landing-en/">Karma Peiró</a> and <a href="https://www.makinguse.com/">Carlo Zapponi</a> as well as an expert on Nietzsche, <a href="https://www.linkedin.com/in/joaqu%C3%ADn-campod%C3%B3nico-g%C3%B3mez-215527195">Joaquin Campodonicó.</a></p>
 		<p>The first static prototype was created in <a href="https://www.figma.com/file/XAEL4J1Z6TfVnyARgltc8U/workshop-0.5-shop-nietz?node-id=111%3A0">Figma</a>, code is hosted on <a href="https://github.com/sarachodosh/workshop1-nietzsche">Github</a> and what you are now seeing are the final efforts of an interactive prototype using D3 and some static SVGs.</p>
 		<p>Our goal for the workshop was to:</p>
 		<ul>
