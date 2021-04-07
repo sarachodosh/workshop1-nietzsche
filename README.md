@@ -1,7 +1,7 @@
 # Workshop 1: Into the mind of Friedrich Nietzsche
 ![Alt Text](https://github.com/sarachodosh/workshop1-nietzsche/blob/main/nietzsche-app/public/build/assets/header1.gif?raw=true)
 
-**Students**: Rebecca, Rocío, and Sara ; **Mentors**: Carlo and Karma ; **Expert**: Joaquín Campodonicó
+**Students**: Rebecca, Rocío, and Sara ; **Mentors**: Carlo and Karma ; **Expert**: Joaquín Campodónico
 
 - [Slack channel](https://mvtecworkspace.slack.com/archives/C01N4MNP0E8)
 - [Airtable Calendar](https://airtable.com/shr6YoJrHIhuSNfy7)
